@@ -5,11 +5,10 @@ const scannerWrapper = document.getElementById('scanner-wrapper');
 const scannerView = document.getElementById('scanner-view');
 const scanButton = document.getElementById('scan-button');
 const scanFeedback = document.getElementById('scan-feedback');
-const mainUiContent = document.getElementById('main-ui-content'); // FIX: Reference the main content wrapper
+const mainUiContent = document.getElementById('main-ui-content'); 
 const closeScannerButton = document.getElementById('close-scanner-button'); 
 
-
-// --- Event Listeners and Setup (NO CHANGE) ---
+// --- Event Listeners and Setup ---
 scanButton.addEventListener('click', () => {
     addMessage('user', 'Scan product');
     showScanner();
@@ -24,12 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     scannerWrapper.classList.add('hidden');
 });
 
-// --- UI Functions ---
+// --- UI Functions (No change in logic, just included for completeness) ---
 function addMessage(sender, content, type = 'text') {
     const bubble = document.createElement('div');
     bubble.classList.add('chat-bubble');
-    
-    // Determine the type of message (bot, user, or product card)
     if (sender === 'bot') {
         bubble.classList.add('bot-bubble');
         bubble.innerHTML = `<p>${content}</p>`;
@@ -40,18 +37,14 @@ function addMessage(sender, content, type = 'text') {
         bubble.classList.add('product-result-bubble');
         bubble.innerHTML = content;
     }
-    
-    // Append the new message to the chat container
     chatMessages.appendChild(bubble);
-    
-    // FIX: Scroll the main content area (which is the scrollable div)
     mainUiContent.scrollTop = mainUiContent.scrollHeight; 
 }
 
 function showScanner() {
-    mainUiContent.classList.add('blurred'); // FIX: Apply blur to content wrapper
+    mainUiContent.classList.add('blurred'); 
     scannerWrapper.classList.remove('hidden');
-    scannerView.classList.add('glowing'); // FIX: Re-enable breathing glow
+    scannerView.classList.add('glowing'); 
     scanFeedback.classList.remove('hidden'); 
     scanButton.classList.add('hidden'); 
     closeScannerButton.classList.remove('hidden'); 
@@ -67,7 +60,7 @@ function showScanner() {
         }).catch((err) => {
             console.error(err);
             if (err.name !== 'NotFoundException') { 
-                addMessage('bot', '❌ Error scanning barcode. Please try again.');
+                addMessage('bot', '❌ Error scanning barcode. Please ensure good lighting and try again.');
             }
             hideScanner(); 
         });
@@ -79,7 +72,7 @@ function showScanner() {
 }
 
 function hideScanner() {
-    mainUiContent.classList.remove('blurred'); // FIX: Remove blur
+    mainUiContent.classList.remove('blurred');
     scannerWrapper.classList.add('hidden');
     scannerView.classList.remove('glowing'); 
     scanFeedback.classList.add('hidden'); 
@@ -92,7 +85,9 @@ function hideScanner() {
 
 // --- Data Fetching & Display (Backend Integration) ---
 function fetchFoodData(barcode) {
-    const apiUrl = `https://checktruth.onrender.com/api/analyze/${barcode}`;
+    // FINAL FIX: Use the clean, hardcoded Render domain. 
+    // This is the URL that works globally.
+    const apiUrl = `https://checktruth.onrender.com/api/analyze/${barcode}`; 
     addMessage('bot', '🕵️‍♀️ Analyzing ingredients...');
 
     fetch(apiUrl)
@@ -106,12 +101,13 @@ function fetchFoodData(barcode) {
             if (data.status === 'success') {
                 displayProductInfo(data);
             } else {
-                addMessage('bot', `🤔 ${data.message || 'Product not found.'} Try another one?`);
+                addMessage('bot', `🤔 ${data.message || 'Product not found in the Open Food Facts database.'} Try another one?`);
             }
         })
         .catch(error => {
             console.error('Error fetching data from backend:', error);
-            addMessage('bot', `🚨 Connection failed. Ensure your Python server is running on port 5000 and the IP is correct. (${error.message})`);
+            // FINAL FIX: Provide a clean error message without local IP/Port references
+            addMessage('bot', `🚨 Analysis failed: The database is inaccessible, or the product barcode is unknown. (Details: ${error.message})`);
         });
 }
 
@@ -126,7 +122,7 @@ function displayProductInfo(data) {
     const ratingColor = getRatingColor(score);
     const scoreEmoji = getRatingEmoji(score);
 
-    // --- 1. Disease Warning Box (Enhanced) ---
+    // --- 1. Disease Warning Box ---
     let diseaseHtml = '';
     if (diseaseWarnings && diseaseWarnings.length > 0) {
         diseaseHtml = `
@@ -191,10 +187,6 @@ function displayProductInfo(data) {
     `;
 
     addMessage('product', content);
-    
-    // FIX 4: Add a spacer message to create scrollable space AFTER the result bubble
-    // This pushes the last bubble up so it's not hidden by the fixed button.
-    // addMessage('bot', '<div style="height: 40px;"></div>');
 }
 
 // --- Rating Logic (Client-side display) ---
@@ -221,3 +213,5 @@ function getRatingColor(score) {
     if (score >= 20) return '#FF9800'; // Orange
     return '#F44336'; // Red
 }
+
+/* --- Final Code Block --- */
