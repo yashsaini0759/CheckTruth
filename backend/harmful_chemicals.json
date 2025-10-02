@@ -1,0 +1,623 @@
+{
+  "monosodium glutamate": {
+    "name": "Monosodium Glutamate (MSG/E621)",
+    "cause": "Known to trigger allergic reactions and headaches in sensitive individuals. Used to induce obesity in lab studies.",
+    "avoid": "Individuals sensitive to MSG, migraine sufferers, patients with asthma.",
+    "diseases_to_avoid": ["Migraines", "Asthma", "Obesity"]
+  },
+  "high fructose corn syrup": {
+    "name": "High Fructose Corn Syrup (HFCS)",
+    "cause": "Rapid blood sugar spike, linked to non-alcoholic fatty liver disease (NAFLD).",
+    "avoid": "Patients with diabetes, pre-diabetes, and NAFLD.",
+    "diseases_to_avoid": ["Diabetes", "Obesity", "NAFLD"]
+  },
+  "refined vegetable oil": {
+    "name": "Refined Vegetable Oil (Excessive Consumption)",
+    "cause": "Often high in Omega-6 fatty acids, linked to inflammation and high cholesterol.",
+    "avoid": "Patients with heart disease, chronic inflammation, and high cholesterol.",
+    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol", "Inflammation"]
+  },
+  "sodium benzoate": {
+    "name": "Sodium Benzoate (E211)",
+    "cause": "Can convert to carcinogen benzene when combined with Vitamin C; linked to hyperactivity in children.",
+    "avoid": "Children with ADHD, individuals sensitive to preservatives.",
+    "diseases_to_avoid": ["ADHD", "Cancer Risk"]
+  },
+  "potassium bromate": {
+    "name": "Potassium Bromate (Banned in India/FSSAI)",
+    "cause": "Known carcinogen, linked to thyroid and kidney tumors in animals.",
+    "avoid": "All consumers. (Flagged due to historical ban and severe risk).",
+    "diseases_to_avoid": ["Cancer Risk", "Kidney Disease"]
+  },
+  "titanium dioxide": {
+    "name": "Titanium Dioxide (E171)",
+    "cause": "Concerns regarding DNA damage and potential carcinogenicity (banned in EU).",
+    "avoid": "All consumers, especially children.",
+    "diseases_to_avoid": ["Cancer Risk", "Digestive Issues"]
+  },
+  "carrageenan": {
+    "name": "Carrageenan (E407)",
+    "cause": "Linked to chronic intestinal inflammation and digestive distress.",
+    "avoid": "Individuals with Inflammatory Bowel Disease (IBD), Crohn's, or Ulcerative Colitis.",
+    "diseases_to_avoid": ["IBD", "Crohn's Disease", "Ulcerative Colitis"]
+  },
+  "red 40": {
+    "name": "Allura Red AC (Red 40 / E129)",
+    "cause": "Linked to hyperactivity and allergic reactions in children.",
+    "avoid": "Children, individuals prone to hives/allergies.",
+    "diseases_to_avoid": ["ADHD", "Allergies"]
+  },
+  "tartrazine": {
+    "name": "Tartrazine (Yellow 5 / E102)",
+    "cause": "Common trigger for asthma symptoms, hives, and hyperactivity.",
+    "avoid": "Asthma sufferers, individuals with aspirin sensitivity.",
+    "diseases_to_avoid": ["Asthma", "Allergies"]
+  },
+  "butylated hydroxyanisole": {
+    "name": "BHA (Butylated Hydroxyanisole / E320)",
+    "cause": "Suspected endocrine disruptor and carcinogen in high doses.",
+    "avoid": "All consumers, especially those with hormonal sensitivities.",
+    "diseases_to_avoid": ["Cancer Risk", "Endocrine Disruption"]
+  },
+  "propyl gallate": {
+    "name": "Propyl Gallate (E310)",
+    "cause": "Linked to cancer in animal studies.",
+    "avoid": "All consumers.",
+    "diseases_to_avoid": ["Cancer Risk"]
+  },
+  "trans fat": {
+    "name": "Trans Fat / Partially Hydrogenated Oil",
+    "cause": "Significantly raises bad cholesterol (LDL) and lowers good cholesterol (HDL).",
+    "avoid": "All consumers, especially those with cardiovascular issues.",
+    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol", "Atherosclerosis"]
+  },
+  "azodicarbonamide": {
+    "name": "Azodicarbonamide (ADA)",
+    "cause": "Known respiratory sensitizer (asthma trigger).",
+    "avoid": "Asthma sufferers.",
+    "diseases_to_avoid": ["Asthma", "Respiratory Issues"]
+  },
+  "hydrolyzed vegetable protein": {
+    "name": "Hydrolyzed Vegetable Protein (HVP)",
+    "cause": "Often contains processed free glutamate (like MSG), triggering sensitivities.",
+    "avoid": "MSG-sensitive individuals.",
+    "diseases_to_avoid": ["Migraines", "MSG Sensitivity"]
+  },
+  "milk solids": {
+    "name": "Milk Solids / Dairy Powders",
+    "cause": "A concentrated source of lactose and dairy protein.",
+    "avoid": "Individuals with lactose intolerance or milk protein allergy.",
+    "diseases_to_avoid": ["Lactose Intolerance", "Milk Allergy"]
+  },
+  "maltodextrin": {
+    "name": "Maltodextrin",
+    "cause": "High glycemic index, spiking blood sugar rapidly.",
+    "avoid": "Patients with diabetes or pre-diabetes.",
+    "diseases_to_avoid": ["Diabetes", "Insulin Resistance"]
+  },
+
+  "salt": {
+    "name": "Excessive Sodium Chloride (Salt)",
+    "cause": "Causes water retention, leading to increased blood volume and blood pressure.",
+    "avoid": "Patients with hypertension, kidney disease, or fluid retention issues.",
+    "diseases_to_avoid": ["Hypertension", "Kidney Disease", "Cardiovascular Disease"]
+  },
+  "sugar": {
+    "name": "Excessive Sucrose (Sugar)",
+    "cause": "Contributes to weight gain, high blood sugar, and insulin resistance.",
+    "avoid": "Patients with diabetes, pre-diabetes, and obesity.",
+    "diseases_to_avoid": ["Diabetes", "Obesity", "Insulin Resistance"]
+  },
+  "atta": {
+    "name": "Whole Wheat Flour (Atta)",
+    "cause": "Contains gluten.",
+    "avoid": "Individuals with Celiac Disease or gluten sensitivity.",
+    "diseases_to_avoid": ["Celiac Disease", "Gluten Intolerance"]
+  },
+  "maida": {
+    "name": "Refined Wheat Flour (Maida)",
+    "cause": "Contains gluten and is highly processed (high glycemic index).",
+    "avoid": "Individuals with Celiac Disease, diabetes, or those managing weight.",
+    "diseases_to_avoid": ["Celiac Disease", "Diabetes", "Weight Management"]
+  },
+  "besan": {
+    "name": "Gram Flour (Besan/Chickpea Flour)",
+    "cause": "High fiber content, may cause bloating in sensitive individuals.",
+    "avoid": "Individuals with severe fiber sensitivity or chickpea allergy.",
+    "diseases_to_avoid": ["Digestive Sensitivity", "Allergies"]
+  },
+  "ghee": {
+    "name": "Ghee (Clarified Butter)",
+    "cause": "High in saturated fat.",
+    "avoid": "Individuals with high LDL cholesterol or severe heart disease (limit intake).",
+    "diseases_to_avoid": ["High Cholesterol", "Cardiovascular Disease"]
+  },
+  "mustard oil": {
+    "name": "Mustard Oil",
+    "cause": "Contains high levels of Erucic Acid (when raw, though regulated in India).",
+    "avoid": "Infants/young children (due to Erucic Acid concern).",
+    "diseases_to_avoid": ["Infant Health (Limit)"]
+  },
+  "peanut oil": {
+    "name": "Peanut Oil",
+    "cause": "May contain peanut proteins.",
+    "avoid": "Individuals with peanut allergy.",
+    "diseases_to_avoid": ["Peanut Allergy"]
+  },
+  "turmeric": {
+    "name": "Turmeric Powder (Haldi)",
+    "cause": "Generally safe, but high intake can thin blood.",
+    "avoid": "Individuals on blood thinners (consult physician).",
+    "diseases_to_avoid": ["Bleeding Disorders (Caution)"]
+  },
+  "ajwain": {
+    "name": "Carom Seeds (Ajwain)",
+    "cause": "Strong gas-releasing properties.",
+    "avoid": "Individuals with severe GERD or stomach ulcers (may increase acid).",
+    "diseases_to_avoid": ["GERD", "Ulcers"]
+  },
+  "hing": {
+    "name": "Asafoetida (Hing)",
+    "cause": "Can cause digestive issues (gas, diarrhea) in large amounts.",
+    "avoid": "Pregnant women (in high doses, consult physician).",
+    "diseases_to_avoid": ["Pregnancy (Caution)"]
+  },
+  "tamarind": {
+    "name": "Tamarind Paste (Imli)",
+    "cause": "Highly acidic.",
+    "avoid": "Individuals with severe GERD or acid reflux.",
+    "diseases_to_avoid": ["GERD", "Acid Reflux"]
+  },
+  "cashew": {
+    "name": "Cashew Nuts (Kaju)",
+    "cause": "Common tree nut allergen.",
+    "avoid": "Individuals with tree nut allergy.",
+    "diseases_to_avoid": ["Tree Nut Allergy"]
+  },
+  "almond": {
+    "name": "Almonds (Badam)",
+    "cause": "Common tree nut allergen.",
+    "avoid": "Individuals with tree nut allergy.",
+    "diseases_to_avoid": ["Tree Nut Allergy"]
+  },
+
+  "e102": {
+    "name": "Tartrazine (E102)",
+    "cause": "Linked to hyperactivity and asthma symptoms.",
+    "avoid": "Asthma sufferers, children.",
+    "diseases_to_avoid": ["Asthma", "ADHD"]
+  },
+  "e133": {
+    "name": "Brilliant Blue FCF (E133)",
+    "cause": "Linked to allergic reactions and hyperactivity.",
+    "avoid": "Children.",
+    "diseases_to_avoid": ["Allergies", "ADHD"]
+  },
+  "e250": {
+    "name": "Sodium Nitrite (E250)",
+    "cause": "Used in processed meats; forms carcinogenic nitrosamines when heated.",
+    "avoid": "Individuals with hypertension (high sodium), cancer risk.",
+    "diseases_to_avoid": ["Hypertension", "Cancer Risk"]
+  },
+  "e635": {
+    "name": "Disodium 5'-Ribonucleotides (E635)",
+    "cause": "Flavor enhancer often used with MSG; may worsen gout.",
+    "avoid": "Patients with gout.",
+    "diseases_to_avoid": ["Gout"]
+  },
+  "e466": {
+    "name": "Carboxymethyl cellulose (E466/Cellulose Gum)",
+    "cause": "Emulsifier linked to gut inflammation and dysbiosis in animal studies.",
+    "avoid": "Individuals with IBD or chronic digestive issues.",
+    "diseases_to_avoid": ["IBD", "Digestive Issues"]
+  },
+  "e330": {
+    "name": "Citric Acid (E330) - Synthetic",
+    "cause": "Highly acidic; can erode tooth enamel and trigger acid reflux/GERD.",
+    "avoid": "Individuals with severe GERD or compromised tooth enamel.",
+    "diseases_to_avoid": ["GERD", "Acid Reflux"]
+  },
+  "e282": {
+    "name": "Calcium Propionate (E282)",
+    "cause": "Common bread preservative; linked to insulin resistance and behavioral changes.",
+    "avoid": "Patients with diabetes, children.",
+    "diseases_to_avoid": ["Diabetes", "Insulin Resistance", "Behavioral Issues"]
+  },
+  "e951": {
+    "name": "Aspartame (E951)",
+    "cause": "Artificial sweetener; contains phenylalanine; suspected link to migraines and neurological issues.",
+    "avoid": "Patients with Phenylketonuria (PKU), migraine sufferers.",
+    "diseases_to_avoid": ["PKU", "Migraines"]
+  },
+
+  "e412": { "name": "Guar Gum (E412)", "cause": "May cause severe bloating/gas in large amounts.", "avoid": "Individuals with severe bloating.", "diseases_to_avoid": ["Digestive Sensitivity"] },
+  "e415": { "name": "Xanthan Gum (E415)", "cause": "Laxative effect in large amounts.", "avoid": "Individuals with sensitive digestive systems.", "diseases_to_avoid": ["Digestive Sensitivity"] },
+  "e300": { "name": "Ascorbic Acid (E300)", "cause": "Generally safe, but high dose can cause diarrhea.", "avoid": "Avoid high doses.", "diseases_to_avoid": ["N/A"] },
+  "e100": { "name": "Curcumin (E100)", "cause": "Generally safe, anti-inflammatory.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "e160a": { "name": "Carotenes (E160a)", "cause": "Natural color, safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "e150a": { "name": "Caramel I (E150a)", "cause": "Natural color, safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "e471": { "name": "Mono- and Diglycerides (E471)", "cause": "Emulsifier derived from fat.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "e322": { "name": "Lecithin (E322)", "cause": "Emulsifier, often soy or egg derived.", "avoid": "Individuals with Soy/Egg Allergy.", "diseases_to_avoid": ["Soy Allergy", "Egg Allergy"] },
+  "e202": { "name": "Potassium Sorbate (E202)", "cause": "Common preservative, low risk.", "avoid": "Individuals with sensitivities to preservatives.", "diseases_to_avoid": ["Allergies"] },
+  "palm oil": { "name": "Palm Oil", "cause": "High saturated fat content.", "avoid": "Individuals with High Cholesterol.", "diseases_to_avoid": ["High Cholesterol"] },
+  "rapeseed oil": { "name": "Canola/Rapeseed Oil", "cause": "Generally safe, high in monounsaturated fats.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "rice flour": { "name": "Rice Flour", "cause": "High glycemic index.", "avoid": "Individuals with diabetes (moderate intake).", "diseases_to_avoid": ["Diabetes"] },
+  "corn flour": { "name": "Corn Flour", "cause": "High glycemic index.", "avoid": "Individuals with diabetes (moderate intake).", "diseases_to_avoid": ["Diabetes"] },
+  "potato starch": { "name": "Potato Starch", "cause": "High glycemic index.", "avoid": "Individuals with diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "onion powder": { "name": "Onion Powder", "cause": "High FODMAP content.", "avoid": "Individuals with IBS or FODMAP sensitivity.", "diseases_to_avoid": ["IBS", "FODMAP Sensitivity"] },
+  "garlic powder": { "name": "Garlic Powder", "cause": "High FODMAP content.", "avoid": "Individuals with IBS or FODMAP sensitivity.", "diseases_to_avoid": ["IBS", "FODMAP Sensitivity"] },
+  "hydrolysed groundnut protein": { "name": "Hydrolysed Groundnut (Peanut) Protein", "cause": "Peanut allergen.", "avoid": "Individuals with Peanut Allergy.", "diseases_to_avoid": ["Peanut Allergy"] },
+  "casein": { "name": "Casein (Milk Protein)", "cause": "Concentrated dairy protein.", "avoid": "Individuals with Milk Protein Allergy.", "diseases_to_avoid": ["Milk Allergy"] },
+  "lactose": { "name": "Lactose", "cause": "Dairy sugar.", "avoid": "Individuals with Lactose Intolerance.", "diseases_to_avoid": ["Lactose Intolerance"] },
+  "soy protein isolate": { "name": "Soy Protein Isolate", "cause": "Concentrated soy product.", "avoid": "Individuals with Soy Allergy.", "diseases_to_avoid": ["Soy Allergy"] },
+  "iodized salt": { "name": "Iodized Salt (Sodium Chloride)", "cause": "High in sodium.", "avoid": "Individuals with Hypertension.", "diseases_to_avoid": ["Hypertension"] },
+  "rock salt": { "name": "Rock Salt (Sendha Namak)", "cause": "High in sodium.", "avoid": "Individuals with Hypertension.", "diseases_to_avoid": ["Hypertension"] },
+  "jaggery": { "name": "Jaggery (Gud)", "cause": "Concentrated sugar source.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "cumin seed": { "name": "Cumin Seed (Jeera)", "cause": "Generally safe, aids digestion.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "turmeric powder": { "name": "Turmeric Powder (Haldi)", "cause": "Anti-inflammatory, generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "coriander seed": { "name": "Coriander Seed (Dhaniya)", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "red chilli powder": { "name": "Red Chilli Powder", "cause": "Can irritate the digestive lining.", "avoid": "Individuals with Ulcers or severe GERD.", "diseases_to_avoid": ["Ulcers", "GERD"] },
+  "garam masala": { "name": "Garam Masala (Spice Blend)", "cause": "Contains various spices (cinnamon, clove, etc.).", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "ginger powder": { "name": "Ginger Powder (Sonth)", "cause": "Can exacerbate acid reflux in high doses.", "avoid": "Individuals with severe GERD.", "diseases_to_avoid": ["GERD"] },
+  "amchur": { "name": "Dried Mango Powder (Amchur)", "cause": "Highly acidic.", "avoid": "Individuals with GERD or Acid Reflux.", "diseases_to_avoid": ["GERD", "Acid Reflux"] },
+  "fenugreek seeds": { "name": "Fenugreek Seeds (Methi)", "cause": "Can lower blood sugar.", "avoid": "Patients on diabetes medication (consult physician).", "diseases_to_avoid": ["Diabetes (Caution)"] },
+  "cardamom": { "name": "Cardamom (Elaichi)", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "clove": { "name": "Clove (Laung)", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "cinnamon": { "name": "Cinnamon (Dalchini)", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "black pepper": { "name": "Black Pepper (Kali Mirch)", "cause": "Can irritate the digestive lining.", "avoid": "Individuals with Ulcers or GERD.", "diseases_to_avoid": ["Ulcers", "GERD"] },
+  "star anise": { "name": "Star Anise", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "bay leaf": { "name": "Bay Leaf (Tez Patta)", "cause": "Generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "baking soda": { "name": "Baking Soda (Sodium Bicarbonate)", "cause": "High sodium content.", "avoid": "Individuals with Hypertension.", "diseases_to_avoid": ["Hypertension"] },
+  "baking powder": { "name": "Baking Powder", "cause": "Contains sodium and aluminum.", "avoid": "Individuals with Hypertension (high sodium).", "diseases_to_avoid": ["Hypertension"] },
+  "coconut oil": { "name": "Coconut Oil", "cause": "High in saturated fat.", "avoid": "Individuals with High Cholesterol.", "diseases_to_avoid": ["High Cholesterol"] },
+  "vegetable shortening": { "name": "Vegetable Shortening (Vanaspati)", "cause": "Often contains Trans Fats/High Saturated Fat.", "avoid": "Individuals with Heart Disease.", "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol"] },
+  "artificial flavour": { "name": "Artificial Flavouring Agents", "cause": "Potential for allergic or sensitivity reactions.", "avoid": "Individuals with allergies or sensitivities.", "diseases_to_avoid": ["Allergies"] },
+  "artificial colour": { "name": "Artificial Colouring Agents", "cause": "Potential for hyperactivity (ADHD) and allergic reactions.", "avoid": "Children, individuals with allergies.", "diseases_to_avoid": ["ADHD", "Allergies"] },
+  "cocoa solids": { "name": "Cocoa Solids (Chocolate)", "cause": "Contains caffeine.", "avoid": "Individuals sensitive to caffeine.", "diseases_to_avoid": ["Caffeine Sensitivity"] },
+  "soy lecithin": { "name": "Soy Lecithin", "cause": "Soy derivative.", "avoid": "Individuals with severe Soy Allergy.", "diseases_to_avoid": ["Soy Allergy"] },
+  "wheat gluten": { "name": "Wheat Gluten", "cause": "Concentrated gluten protein.", "avoid": "Individuals with Celiac Disease.", "diseases_to_avoid": ["Celiac Disease"] },
+  "hydrolysed wheat protein": { "name": "Hydrolysed Wheat Protein", "cause": "Contains gluten.", "avoid": "Individuals with Celiac Disease.", "diseases_to_avoid": ["Celiac Disease"] },
+  "invert sugar syrup": { "name": "Invert Sugar Syrup", "cause": "High sugar content.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "liquid glucose": { "name": "Liquid Glucose", "cause": "High glycemic index.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "edible gums": { "name": "Edible Gums (Thickeners)", "cause": "May cause bloating.", "avoid": "Individuals with Digestive Sensitivity.", "diseases_to_avoid": ["Digestive Sensitivity"] },
+  "corn starch": { "name": "Corn Starch", "cause": "High glycemic index.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "refined sugar": { "name": "Refined Sugar", "cause": "High sugar content.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "whole milk powder": { "name": "Whole Milk Powder", "cause": "Lactose and saturated fat.", "avoid": "Lactose Intolerance, High Cholesterol.", "diseases_to_avoid": ["Lactose Intolerance", "High Cholesterol"] },
+  "skimmed milk powder": { "name": "Skimmed Milk Powder", "cause": "Lactose.", "avoid": "Lactose Intolerance.", "diseases_to_avoid": ["Lactose Intolerance"] },
+  "egg powder": { "name": "Egg Powder", "cause": "Concentrated egg protein.", "avoid": "Individuals with Egg Allergy.", "diseases_to_avoid": ["Egg Allergy"] },
+  "natural identical flavouring substances": { "name": "Natural/Identical Flavouring", "cause": "Potential for sensitivities.", "avoid": "Individuals with allergies.", "diseases_to_avoid": ["Allergies"] },
+  "paprika extract": { "name": "Paprika Extract (E160c)", "cause": "Natural color, safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "beetroot red": { "name": "Beetroot Red (E162)", "cause": "Natural color, safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "natural colour": { "name": "Natural Colouring Agent", "cause": "Generally safe, but specific source may be an allergen.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "artificial sweetener": { "name": "Artificial Sweeteners (General)", "cause": "Various side effects including digestive issues and migraines.", "avoid": "Individuals with sensitive digestive systems, migraine sufferers.", "diseases_to_avoid": ["Migraines", "Digestive Issues"] },
+  "sucralose": { "name": "Sucralose (E955)", "cause": "Artificial sweetener; suspected gut health disruption.", "avoid": "Individuals with IBD or digestive issues.", "diseases_to_avoid": ["IBD", "Digestive Issues"] },
+  "acesulfame potassium": { "name": "Acesulfame Potassium (E950)", "cause": "Artificial sweetener.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "polydextrose": { "name": "Polydextrose (E1200)", "cause": "Used as a fiber replacement; can cause bloating/gas in large amounts.", "avoid": "Individuals with severe digestive sensitivity.", "diseases_to_avoid": ["Digestive Sensitivity"] },
+  "polyvinylpyrrolidone": { "name": "Polyvinylpyrrolidone (PVP / E1201)", "cause": "Binding agent; generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "gellan gum": { "name": "Gellan Gum (E418)", "cause": "Thickener; generally safe.", "avoid": "N/A", "diseases_to_avoid": ["N/A"] },
+  "fructose": { "name": "Fructose (Concentrated)", "cause": "High sugar content; can lead to NAFLD.", "avoid": "Individuals with NAFLD or Diabetes.", "diseases_to_avoid": ["NAFLD", "Diabetes"] },
+  "glucose syrup": { "name": "Glucose Syrup", "cause": "High glycemic index.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "dextrose": { "name": "Dextrose", "cause": "High glycemic index.", "avoid": "Individuals with Diabetes.", "diseases_to_avoid": ["Diabetes"] },
+  "modified starch": { "name": "Modified Starch", "cause": "Often high glycemic index; source may be an allergen.", "avoid": "Individuals with Diabetes or specific grain allergies.", "diseases_to_avoid": ["Diabetes", "Grain Allergy"] },
+  "citric acid": { "name": "Citric Acid (pH regulator)", "cause": "Highly acidic.", "avoid": "Individuals with GERD/Acid Reflux.", "diseases_to_avoid": ["GERD", "Acid Reflux"] },
+  "malic acid": { "name": "Malic Acid (pH regulator)", "cause": "Highly acidic.", "avoid": "Individuals with GERD/Acid Reflux.", "diseases_to_avoid": ["GERD", "Acid Reflux"] },
+  "sodium phosphate": { "name": "Sodium Phosphates", "cause": "High sodium content.", "avoid": "Individuals with Hypertension/Kidney Disease.", "diseases_to_avoid": ["Hypertension", "Kidney Disease"] },
+  "potassium chloride": { "name": "Potassium Chloride", "cause": "Can be problematic for kidney function in large amounts.", "avoid": "Individuals with Kidney Disease.", "diseases_to_avoid": ["Kidney Disease"] 
+  }
+  ,
+
+  "ponceau 4r": {
+    "name": "Ponceau 4R (E124)",
+    "cause": "Synthetic azo dye; linked to hyperactivity, banned in several countries.",
+    "avoid": "Children, individuals with asthma or aspirin sensitivity.",
+    "diseases_to_avoid": ["ADHD", "Asthma", "Allergies"]
+  },
+  "sunset yellow fcf": {
+    "name": "Sunset Yellow FCF (E110)",
+    "cause": "Synthetic azo dye; linked to hyperactivity and stomach upsets.",
+    "avoid": "Children, individuals with asthma.",
+    "diseases_to_avoid": ["ADHD", "Asthma"]
+  },
+  "carmoisine": {
+    "name": "Carmoisine (E122)",
+    "cause": "Synthetic azo dye; linked to hyperactivity and possible allergic reactions.",
+    "avoid": "Children.",
+    "diseases_to_avoid": ["ADHD", "Allergies"]
+  },
+  "indigotine": {
+    "name": "Indigotine (Indigo Carmine / E132)",
+    "cause": "Synthetic color; can cause nausea, high blood pressure, and skin reactions.",
+    "avoid": "Individuals with high blood pressure or known sensitivities.",
+    "diseases_to_avoid": ["Hypertension", "Allergies"]
+  },
+  "fast green fcf": {
+    "name": "Fast Green FCF (E143)",
+    "cause": "Synthetic color; linked to tumor growth in animals.",
+    "avoid": "All consumers.",
+    "diseases_to_avoid": ["Cancer Risk"]
+  },
+  "erythrosine": {
+    "name": "Erythrosine (Red 3 / E127)",
+    "cause": "Synthetic color; linked to thyroid tumors in animal studies (restricted by FDA).",
+    "avoid": "Individuals with thyroid issues.",
+    "diseases_to_avoid": ["Thyroid Dysfunction", "Cancer Risk"]
+  },
+  "quinolone yellow": {
+    "name": "Quinolone Yellow (E104)",
+    "cause": "Linked to hyperactivity and potential allergic reactions.",
+    "avoid": "Children.",
+    "diseases_to_avoid": ["ADHD", "Allergies"]
+  },
+  "brilliant black bn": {
+    "name": "Brilliant Black BN (E151)",
+    "cause": "Synthetic color; can cause allergic reactions, especially in asthma patients.",
+    "avoid": "Asthma sufferers.",
+    "diseases_to_avoid": ["Asthma", "Allergies"]
+  },
+  
+  "sulphur dioxide": {
+    "name": "Sulphur Dioxide (E220)",
+    "cause": "Sulfiting agent; severe asthma trigger and linked to allergic reactions.",
+    "avoid": "Asthma sufferers, individuals with sulfite sensitivity.",
+    "diseases_to_avoid": ["Asthma", "Allergies"]
+  },
+  "sodium metabisulphite": {
+    "name": "Sodium Metabisulphite (E223)",
+    "cause": "Sulfite agent; common asthma and allergy trigger.",
+    "avoid": "Asthma sufferers.",
+    "diseases_to_avoid": ["Asthma", "Allergies"]
+  },
+  "potassium sorbate": {
+    "name": "Potassium Sorbate (E202)",
+    "cause": "Preservative; generally safe but can cause skin irritation and mild allergic reactions.",
+    "avoid": "Individuals with skin sensitivity.",
+    "diseases_to_avoid": ["Skin Sensitivity", "Allergies"]
+  },
+  "calcium propionate": {
+    "name": "Calcium Propionate (E282)",
+    "cause": "Common bread preservative; linked to insulin resistance and behavioral issues in children.",
+    "avoid": "Children, patients with diabetes.",
+    "diseases_to_avoid": ["Diabetes", "Insulin Resistance", "Behavioral Issues"]
+  },
+  "butylated hydroxytoluene": {
+    "name": "BHT (Butylated Hydroxytoluene / E321)",
+    "cause": "Antioxidant; linked to cancer and neurological issues in animal studies.",
+    "avoid": "All consumers.",
+    "diseases_to_avoid": ["Cancer Risk", "Neurological Issues"]
+  },
+  "sodium propionate": {
+    "name": "Sodium Propionate (E281)",
+    "cause": "Preservative; linked to insulin resistance.",
+    "avoid": "Patients with diabetes.",
+    "diseases_to_avoid": ["Diabetes", "Insulin Resistance"]
+  },
+  "sorbic acid": {
+    "name": "Sorbic Acid (E200)",
+    "cause": "Preservative; low toxicity but can cause mild irritation or allergic reactions.",
+    "avoid": "Individuals with chemical sensitivities.",
+    "diseases_to_avoid": ["Allergies"]
+  },
+  
+  "polysorbate 80": {
+    "name": "Polysorbate 80 (E433)",
+    "cause": "Emulsifier; linked to gut inflammation, dysbiosis, and metabolic syndrome in animal studies.",
+    "avoid": "Individuals with IBD or chronic digestive issues.",
+    "diseases_to_avoid": ["IBD", "Digestive Issues", "Metabolic Syndrome"]
+  },
+  "polysorbate 60": {
+    "name": "Polysorbate 60 (E435)",
+    "cause": "Emulsifier; linked to gut inflammation and dysbiosis.",
+    "avoid": "Individuals with IBD or chronic digestive issues.",
+    "diseases_to_avoid": ["IBD", "Digestive Issues"]
+  },
+  "propylene glycol alginate": {
+    "name": "Propylene Glycol Alginate (E405)",
+    "cause": "Stabilizer; generally safe, but can affect nutrient absorption.",
+    "avoid": "N/A",
+    "diseases_to_avoid": ["N/A"]
+  },
+  "locust bean gum": {
+    "name": "Locust Bean Gum (E410)",
+    "cause": "Thickener; can cause bloating, gas, and digestive discomfort in large amounts.",
+    "avoid": "Individuals with severe digestive sensitivity.",
+    "diseases_to_avoid": ["Digestive Sensitivity", "IBS"]
+  },
+  "tragacanth gum": {
+    "name": "Tragacanth Gum (E413)",
+    "cause": "Thickener; can rarely cause allergic reactions.",
+    "avoid": "Individuals with rare gum allergies.",
+    "diseases_to_avoid": ["Allergies"]
+  },
+ 
+  "peanut": {
+    "name": "Peanut / Groundnut (Arachis)",
+    "cause": "Severe, life-threatening allergen.",
+    "avoid": "Individuals with Peanut Allergy.",
+    "diseases_to_avoid": ["Peanut Allergy", "Anaphylaxis"]
+  },
+  "soya": {
+    "name": "Soy / Soya",
+    "cause": "Common allergen; soy protein concentrate/isolate can disrupt thyroid function.",
+    "avoid": "Individuals with Soy Allergy, those with thyroid conditions.",
+    "diseases_to_avoid": ["Soy Allergy", "Thyroid Dysfunction"]
+  },
+  "egg": {
+    "name": "Egg Solids / Egg Albumin",
+    "cause": "Common allergen.",
+    "avoid": "Individuals with Egg Allergy.",
+    "diseases_to_avoid": ["Egg Allergy"]
+  },
+  "sesame": {
+    "name": "Sesame Seeds / Sesame Oil",
+    "cause": "Common allergen.",
+    "avoid": "Individuals with Sesame Allergy.",
+    "diseases_to_avoid": ["Sesame Allergy"]
+  },
+  "mustard": {
+    "name": "Mustard Seeds / Mustard Extract",
+    "cause": "Common allergen.",
+    "avoid": "Individuals with Mustard Allergy.",
+    "diseases_to_avoid": ["Mustard Allergy"]
+  },
+  "wheat": {
+    "name": "Wheat (Maida / Atta / Rava)",
+    "cause": "Contains gluten.",
+    "avoid": "Individuals with Celiac Disease or gluten sensitivity.",
+    "diseases_to_avoid": ["Celiac Disease", "Gluten Intolerance"]
+  },
+  "refined rice flour": {
+    "name": "Refined Rice Flour",
+    "cause": "High glycemic index.",
+    "avoid": "Individuals with diabetes or blood sugar control issues.",
+    "diseases_to_avoid": ["Diabetes"]
+  },
+  "coconut": {
+    "name": "Coconut / Coconut Oil",
+    "cause": "High saturated fat content.",
+    "avoid": "Individuals with high LDL cholesterol.",
+    "diseases_to_avoid": ["High Cholesterol", "Cardiovascular Disease"]
+  },
+  "vegetable fat": {
+    "name": "Vegetable Fat / Vanaspati",
+    "cause": "Often contains trans fats and high saturated fat (linked to heart disease).",
+    "avoid": "Individuals with heart disease or high cholesterol.",
+    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol"]
+  },
+  
+  "acesulfame k": {
+    "name": "Acesulfame Potassium (Acesulfame K / E950)",
+    "cause": "Artificial sweetener; may interfere with metabolic function.",
+    "avoid": "N/A (Limit overall artificial sweeteners)",
+    "diseases_to_avoid": ["Metabolic Syndrome (Caution)"]
+  },
+  "saccharin": {
+    "name": "Saccharin (E954)",
+    "cause": "Artificial sweetener; low risk but under historic scrutiny.",
+    "avoid": "N/A (Limit overall artificial sweeteners)",
+    "diseases_to_avoid": ["N/A"]
+  },
+  "maltitol": {
+    "name": "Maltitol (E965)",
+    "cause": "Sugar alcohol; strong laxative effect.",
+    "avoid": "Individuals with IBS or severe digestive sensitivity.",
+    "diseases_to_avoid": ["IBS", "Digestive Sensitivity"]
+  },
+ 
+  "sodium acid pyrophosphate": {
+    "name": "Sodium Acid Pyrophosphate (SAPP / E450)",
+    "cause": "High phosphate/sodium content; can affect kidney and heart health.",
+    "avoid": "Patients with kidney disease or hypertension.",
+    "diseases_to_avoid": ["Kidney Disease", "Hypertension"]
+  },
+  "calcium sulphate": {
+    "name": "Calcium Sulphate (E516)",
+    "cause": "Excessive intake can contribute to kidney stones.",
+    "avoid": "Individuals prone to kidney stones.",
+    "diseases_to_avoid": ["Kidney Stones"]
+  },
+  "sodium bicarbonate": {
+    "name": "Sodium Bicarbonate (Baking Soda)",
+    "cause": "Very high sodium content.",
+    "avoid": "Patients with severe hypertension.",
+    "diseases_to_avoid": ["Hypertension"]
+  },
+  
+
+  "potassium carbonate": {
+    "name": "Potassium Carbonate (E501)",
+    "cause": "Generally safe, but high potassium can be dangerous.",
+    "avoid": "Individuals with kidney disease (due to potassium regulation).",
+    "diseases_to_avoid": ["Kidney Disease"]
+  },
+  "fumaric acid": {
+    "name": "Fumaric Acid (E297)",
+    "cause": "Acidulant; generally safe but may cause mouth and stomach irritation.",
+    "avoid": "Individuals with severe acid reflux or ulcers.",
+    "diseases_to_avoid": ["Ulcers", "Acid Reflux"]
+  },
+  "lactic acid": {
+    "name": "Lactic Acid (E270)",
+    "cause": "Acidulant; generally safe, but can irritate ulcers.",
+    "avoid": "Individuals with ulcers.",
+    "diseases_to_avoid": ["Ulcers"]
+  },
+  "tartaric acid": {
+    "name": "Tartaric Acid (E334)",
+    "cause": "Acidulant; can have a laxative effect in large doses.",
+    "avoid": "Individuals with digestive sensitivity.",
+    "diseases_to_avoid": ["Digestive Sensitivity"]
+  },
+  "sodium lactate": {
+    "name": "Sodium Lactate (E325)",
+    "cause": "High sodium content.",
+    "avoid": "Individuals with hypertension.",
+    "diseases_to_avoid": ["Hypertension"]
+  },
+
+  "asafoetida": {
+    "name": "Asafoetida (Hing)",
+    "cause": "Can cause digestive issues (gas, diarrhea) in large amounts.",
+    "avoid": "Pregnant women (in high doses, consult physician).",
+    "diseases_to_avoid": ["Pregnancy (Caution)"]
+  },
+  "fenugreek": {
+    "name": "Fenugreek Seeds (Methi)",
+    "cause": "Known to significantly lower blood sugar.",
+    "avoid": "Patients on diabetes medication (consult physician due to risk of hypoglycemia).",
+    "diseases_to_avoid": ["Diabetes (Hypoglycemia Risk)"]
+  },
+  "black cardamom": {
+    "name": "Black Cardamom (Badi Elaichi)",
+    "cause": "Generally safe.",
+    "avoid": "N/A",
+    "diseases_to_avoid": ["N/A"]
+  },
+  "black salt": {
+    "name": "Black Salt (Kala Namak)",
+    "cause": "High sodium content.",
+    "avoid": "Individuals with hypertension.",
+    "diseases_to_avoid": ["Hypertension"]
+  },
+  "mustard seeds": {
+    "name": "Mustard Seeds",
+    "cause": "Common allergen.",
+    "avoid": "Individuals with Mustard Allergy.",
+    "diseases_to_avoid": ["Mustard Allergy"]
+  },
+  "poppy seeds": {
+    "name": "Poppy Seeds (Khus Khus)",
+    "cause": "Potential for false positive drug tests (rare).",
+    "avoid": "Individuals subject to drug screening.",
+    "diseases_to_avoid": ["N/A"]
+  },
+  "ajinomoto": {
+    "name": "Ajinomoto (Common name for MSG)",
+    "cause": "Known to trigger allergic reactions and headaches in sensitive individuals.",
+    "avoid": "Individuals sensitive to MSG.",
+    "diseases_to_avoid": ["Migraines", "Asthma"]
+  },
+  "chloropropanols": {
+    "name": "Chloropropanols (In Soy/Oyster Sauce)",
+    "cause": "Contaminants found in sauces; linked to cancer.",
+    "avoid": "All consumers (due to cancer risk).",
+    "diseases_to_avoid": ["Cancer Risk"]
+  },
+  "metanil yellow": {
+    "name": "Metanil Yellow (Illegal Dye)",
+    "cause": "Illegal food dye; toxic and linked to neurological damage.",
+    "avoid": "All consumers.",
+    "diseases_to_avoid": ["Neurological Damage", "Toxicity"]
+  },
+  "rhodamine b": {
+    "name": "Rhodamine B (Illegal Dye)",
+    "cause": "Illegal textile dye; toxic and linked to cancer.",
+    "avoid": "All consumers.",
+    "diseases_to_avoid": ["Cancer Risk", "Toxicity"]
+  },
+  "erucic acid": {
+    "name": "Erucic Acid (High Levels)",
+    "cause": "High levels in certain oils (mustard, sassafras) linked to heart damage.",
+    "avoid": "Infants/young children, individuals with heart conditions.",
+    "diseases_to_avoid": ["Cardiovascular Disease (Caution)"]
+  }
+}

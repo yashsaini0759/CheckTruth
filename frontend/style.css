@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #7B1FA2;
+    --secondary-color: #9C27B0;
+    --accent-color: #E040FB;
+    --text-color-light: #FFFFFF;
+    --background-dark: #121212;
+    --glow-color: #E040FB;
+    --color-danger: #F44336; 
+    --color-warning: #FF9800;
+    
+    /* Layout Variables */
+    --header-height: 60px;
+    --button-height: 70px; /* Adjusted height for button container */
+    --final-padding: 5px; /* 5px space between chat and button */
+}
+
+/* --- Base & Global Layout --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-dark); 
+    color: var(--text-color-light); 
+    height: 100%;
+    overflow: hidden;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column; /* Stacks header, chat, and button vertically */
+    height: 100vh;
+    max-width: 500px; 
+    margin: 0 auto;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Fixed Header --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: var(--header-height);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 10; /* Ensures it stays above chat scroll */
+    flex-shrink: 0; /* Prevents shrinking */
+}
+h1 { margin: 0; }
+
+/* --- Chat Area & Blur Target --- */
+/* --- NEW: Main UI Content (The Scrollable Chat Area) --- */
+#main-ui-content {
+    flex-grow: 1; /* CRITICAL: Takes up all available vertical space */
+    overflow-y: auto; /* Handles all chat scrolling */
+    -webkit-overflow-scrolling: touch;
+    background-color: #000;
+    transition: filter 0.3s ease-in-out; 
+    
+    /* FIX: Add padding to the bottom of the chat to create the final 5px gap */
+    padding-bottom: var(--final-padding); 
+}
+
+#main-ui-content.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+/* FIX: Ensure chat messages push each other down correctly */
+#chat-messages {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Ensure the fixed header overlaps correctly */
+header {
+    /* position: fixed and top: 0 were already good, just ensure z-index is high */
+    z-index: 100;
+}
+
+/* --- Product Results Card (General Chat Styles) --- */
+.product-result-bubble {
+    background-color: var(--result-card-dark);
+    /* ... other styles ... */
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.chat-bubble {     padding: 0.7rem 1rem;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word; 
+    font-size: 0.95rem;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+.bot-bubble { background-color: var(--chat-bubble-dark); }
+.user-bubble { background-color: var(--secondary-color); }
+
+/* --- Ingredient List and Scrolling --- */
+
+/* --- Ingredient List and Scrolling --- */
+
+/* 1. Scrolling for the Specific Chemical Insights (The #harmful-list) */
+#harmful-list {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    background-color: var(--background-dark);
+    
+    /* CRITICAL SCROLLING PROPERTIES */
+    max-height: 100px; 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 5px; 
+    
+    /* Padding added to accommodate scrollbar and prevent cutoff */
+    padding: 5px 5px 5px 0;
+}
+
+/* 2. Scrolling for the Full Ingredient Breakdown (The general UL list) */
+.product-result-bubble ul {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    background-color: var(--background-dark);
+    
+    /* CRITICAL SCROLLING PROPERTIES */
+    max-height: 100px; 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 5px;
+    
+    /* Padding added to accommodate scrollbar and prevent cutoff */
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+/* 3. Styling for Flagged Items (Ensure clarity and spacing) */
+.product-result-bubble .harmful-item {
+    background-color: #2a0000; 
+    border-left: 4px solid var(--color-danger);
+    padding: 0.6rem; 
+    margin-bottom: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* --- Scanner Section (Centered, Fixed) --- */
+#scanner-wrapper {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95); /* Slightly more opaque background */
+    z-index: 500;
+    flex-direction: column;
+}
+
+#scanner-view {
+    width: 90%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid transparent; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* FIX 4: Restore Purple Breathing Glow to Scanner View */
+#scanner-view.glowing {
+    animation: breathing-glow 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes breathing-glow {
+    from { border-color: rgba(224, 64, 251, 0.3); box-shadow: 0 0 15px rgba(224, 64, 251, 0.3); }
+    to { border-color: var(--glow-color); box-shadow: 0 0 25px var(--glow-color); }
+}
+
+
+/* --- FIX 5: Close Scanner Button (White Glowing) --- */
+#close-scanner-button {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 600; 
+    /* ... rest of the button styles ... */
+}
+@keyframes white-breathing-glow {
+    from { color: rgba(255, 255, 255, 0.5); text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+    to { color: var(--text-color-light); text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+}
+
+
+/* --- FIX 6: Scan Button Container (Bottom Fixed and Compact) --- */
+#button-container {
+    background-color: #000;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Shadow adjusted */
+    height: var(--button-height);
+    z-index: 10;
+    flex-shrink: 0;
+    padding-top: var(--final-padding); /* 5px padding on top of button */
+}
+
+
+#scan-button {
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    color: var(--text-color-light);
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.1s ease-out;
+}
+
+#scan-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px var(--accent-color); /* Purple glow on click */
+}
+
+
+.hidden { display: none !important; }
+/* ... rating colors remain ... */
+/* Rating specific colors, adapting to dark theme */
+.rating-excellent { color: #8BC34A; } 
+.rating-good { color: #2196F3; }    
+.rating-average { color: #FFC107; } 
+.rating-bad { color: #FF9800; }     
+.rating-awful { color: #F44336; }   
+
+.rating-bar {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #555;
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+    width: var(--rating-width, 0%);
+    background-color: var(--rating-color);
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+}
