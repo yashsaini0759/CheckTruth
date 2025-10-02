@@ -4,21 +4,19 @@ import json
 import re
 import os
 
-# --- Flask Initialization ---
-# Configures Flask to look in the current directory (root) for static files.
-# The static routing functions (at the bottom) handle serving assets from the 'frontend' subfolder.
-app = Flask(__name__, static_folder='.', static_url_path='/')
+# --- Flask Initialization and Static Folder Configuration ---
+# CRITICAL FIX: Set static_folder to 'frontend'. This tells Flask where the HTML/CSS/JS live.
+app = Flask(__name__, static_folder='frontend', static_url_path='/')
 
 # --- CORS (Essential for Production) ---
 @app.after_request
 def after_request(response):
-    # Allows the frontend on checktruth.onrender.com to communicate with the API on the same domain
     header = response.headers
     header['Access-Control-Allow-Origin'] = '*'
     return response
 
 # --- File Path Management ---
-# Uses the os library to correctly find the JSON file inside the 'backend' folder
+# Finds the JSON file in the 'backend' folder, assuming app.py is in the root.
 json_path = os.path.join(os.path.dirname(__file__), 'backend', 'harmful_chemicals.json')
 try:
     with open(json_path, 'r') as f:
@@ -62,11 +60,11 @@ def calculate_genuine_score(product, flagged_chemicals):
         avoid = chem.get('avoid', '').lower()
         
         if "carcinogen" in cause or "banned" in avoid or "toxic" in avoid:
-            chemical_penalty += 8  # Severe Risk
+            chemical_penalty += 8
         elif "hyperactivity" in cause or "asthma" in avoid or "allergy" in avoid:
-            chemical_penalty += 5  # Moderate Risk
+            chemical_penalty += 5
         elif "digestive" in cause or "caution" in avoid or "fda adverse event" in cause:
-            chemical_penalty += 3  # Minor/Caution Risk
+            chemical_penalty += 3
         
     score -= min(40, chemical_penalty)
 
@@ -76,7 +74,7 @@ def calculate_genuine_score(product, flagged_chemicals):
 # --- Layer 3: Dynamic FDA Check Function ---
 def check_fda_adverse_events(ingredient_name):
     """
-    Queries the openFDA API for adverse event reports related to a specific ingredient.
+    Queries the openFDA API for adverse event reports.
     """
     fda_url = "https://api.fda.gov/food/event.json"
     
@@ -177,14 +175,11 @@ def analyze_food(barcode):
 @app.route('/')
 def serve_index():
     """Serves the main HTML file when the user visits the root URL."""
-    return app.send_static_file('frontend/index.html')
+    # Because static_folder='frontend', Flask looks inside that folder.
+    return app.send_static_file('index.html')
 
 @app.route('/<path:filename>')
 def serve_static(filename):
     """Serves all static assets (CSS, JS, etc.) from the frontend directory."""
-    # Ensure the path is relative to the frontend folder
-    if filename.startswith('frontend/'):
-        return app.send_static_file(filename)
-    
-    # Handle files requested directly from the root (like style.css, script.js)
-    return app.send_static_file('frontend/' + filename)
+    # Flask serves assets from the 'frontend' static folder.
+    return app.send_static_file(filename)
