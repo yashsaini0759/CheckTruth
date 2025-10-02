@@ -54,16 +54,20 @@ header {
 h1 { margin: 0; }
 
 /* --- Chat Area & Blur Target --- */
-/* --- NEW: Main UI Content (The Scrollable Chat Area) --- */
 #main-ui-content {
-    flex-grow: 1; /* CRITICAL: Takes up all available vertical space */
-    overflow-y: auto; /* Handles all chat scrolling */
-    -webkit-overflow-scrolling: touch;
-    background-color: #000;
-    transition: filter 0.3s ease-in-out; 
+    /* Use padding to push content away from fixed header/footer */
+    padding-top: var(--header-height); /* Pushes content down past the fixed header */
+    padding-bottom: 95px; /* Button height (70px) + 25px extra space */
     
-    /* FIX: Add padding to the bottom of the chat to create the final 5px gap */
-    padding-bottom: var(--final-padding); 
+    /* Make the content area full height and handle the scrolling */
+    height: 100vh; 
+    overflow-y: auto; 
+    
+    /* Critical for mobile: prevent content from going under the fixed button */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #main-ui-content.blurred {
@@ -80,8 +84,13 @@ h1 { margin: 0; }
 }
 
 /* Ensure the fixed header overlaps correctly */
+/* 1. Ensure Header is truly fixed and occupies space */
 header {
-    /* position: fixed and top: 0 were already good, just ensure z-index is high */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    height: var(--header-height); /* e.g., 60px */
     z-index: 100;
 }
 
@@ -203,15 +212,33 @@ header {
 }
 
 
-/* --- FIX 6: Scan Button Container (Bottom Fixed and Compact) --- */
+/* --- CRITICAL BUTTON VISIBILITY FIX --- */
 #button-container {
-    background-color: #000;
-    text-align: center;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5); /* Shadow adjusted */
-    height: var(--button-height);
-    z-index: 10;
-    flex-shrink: 0;
-    padding-top: var(--final-padding); /* 5px padding on top of button */
+    /* Ensure it is fixed to the bottom edge */
+    position: fixed !important; 
+    bottom: 0 !important;
+    left: 0;
+    right: 0;
+
+    /* Make sure its Z-index is high enough to be seen */
+    z-index: 1000 !important; 
+    
+    /* Ensure the padding is tight to the bottom */
+    padding: 0.5rem 1rem !important; 
+    
+    /* Use max-width to center it under the main app container */
+    max-width: 500px; 
+    margin: 0 auto;
+    
+    /* Ensure no background color issue */
+    background-color: #000 !important; 
+    
+    /* Give the button space to sit */
+    height: 70px; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
