@@ -5,14 +5,14 @@ import re
 import os
 
 # --- Flask Initialization ---
-# This tells Flask where to look for static files (the 'frontend' folder is in the root)
-# We set static_folder to the root and handle routing manually for clarity.
+# Configures Flask to look in the current directory (root) for static files.
+# The static routing functions (at the bottom) handle serving assets from the 'frontend' subfolder.
 app = Flask(__name__, static_folder='.', static_url_path='/')
 
 # --- CORS (Essential for Production) ---
 @app.after_request
 def after_request(response):
-    # This allows your frontend (from Render's domain) to talk to the API
+    # Allows the frontend on checktruth.onrender.com to communicate with the API on the same domain
     header = response.headers
     header['Access-Control-Allow-Origin'] = '*'
     return response
@@ -75,6 +75,9 @@ def calculate_genuine_score(product, flagged_chemicals):
 
 # --- Layer 3: Dynamic FDA Check Function ---
 def check_fda_adverse_events(ingredient_name):
+    """
+    Queries the openFDA API for adverse event reports related to a specific ingredient.
+    """
     fda_url = "https://api.fda.gov/food/event.json"
     
     clean_name = re.sub(r'[^a-z\s]', '', ingredient_name).strip()
@@ -185,5 +188,3 @@ def serve_static(filename):
     
     # Handle files requested directly from the root (like style.css, script.js)
     return app.send_static_file('frontend/' + filename)
-
-# Note: The if __name__ == '__main__': block is REMOVED, as Gunicorn handles startup.
