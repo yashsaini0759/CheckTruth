@@ -213,30 +213,25 @@ header {
 
 
 /* --- CRITICAL BUTTON VISIBILITY FIX --- */
+/* --- Scan Button Container --- */
 #button-container {
-    /* Ensure it is fixed to the bottom edge */
+    /* CRITICAL FIX: Ensure visibility and positioning */
     position: fixed !important; 
-    bottom: 0 !important;
+    bottom: 0 !important; /* Force it to the bottom edge */
+    
+    /* Ensure sizing is correct */
     left: 0;
     right: 0;
-
-    /* Make sure its Z-index is high enough to be seen */
-    z-index: 1000 !important; 
-    
-    /* Ensure the padding is tight to the bottom */
-    padding: 0.5rem 1rem !important; 
-    
-    /* Use max-width to center it under the main app container */
-    max-width: 500px; 
-    margin: 0 auto;
-    
-    /* Ensure no background color issue */
-    background-color: #000 !important; 
-    
-    /* Give the button space to sit */
-    height: 70px; 
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    text-align: center;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
+    height: var(--button-height);
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1000; /* Ensure it is the highest element */
+    
+    display: flex; /* Use flex to center the button */
     justify-content: center;
     align-items: center;
 }
