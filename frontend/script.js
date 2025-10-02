@@ -92,7 +92,7 @@ function hideScanner() {
 
 // --- Data Fetching & Display (Backend Integration) ---
 function fetchFoodData(barcode) {
-    const apiUrl = `http://192.168.29.248:5000/api/analyze/${barcode}`; 
+    const apiUrl = `https://checktruth.onrender.com/api/analyze/${barcode}`;
     addMessage('bot', '🕵️‍♀️ Analyzing ingredients...');
 
     fetch(apiUrl)
