@@ -12,6 +12,8 @@
     --header-height: 60px;
     --button-height: 70px; /* Adjusted height for button container */
     --final-padding: 5px; /* 5px space between chat and button */
+    --header-height: 60px; /* Use the exact header height */
+    --button-height: 70px;
 }
 
 /* --- Base & Global Layout --- */
@@ -26,12 +28,12 @@ body, html {
 }
 
 #app-container {
+    /* Use Flexbox to manage the three main sections */
     display: flex;
-    flex-direction: column; /* Stacks header, chat, and button vertically */
+    flex-direction: column; 
     height: 100vh;
     max-width: 500px; 
     margin: 0 auto;
-    background-color: #000;
     position: relative;
     overflow: hidden;
 }
@@ -46,29 +48,33 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     height: var(--header-height);
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 10; /* Ensures it stays above chat scroll */
-    flex-shrink: 0; /* Prevents shrinking */
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+    
+    /* FIX: Make header sticky within the scrolling area, and remove margin-bottom */
+    position: sticky; 
+    top: 0;
+    z-index: 10;
 }
 h1 { margin: 0; }
 
 /* --- Chat Area & Blur Target --- */
 #main-ui-content {
-    /* Use padding to push content away from fixed header/footer */
-    padding-top: var(--header-height); /* Pushes content down past the fixed header */
-    padding-bottom: 95px; /* Button height (70px) + 25px extra space */
+    flex-grow: 1; /* Takes up all available space */
+    overflow-y: auto; /* Handles all chat scrolling */
+    -webkit-overflow-scrolling: touch;
+    background-color: #000;
+    transition: filter 0.3s ease-in-out; 
+    width: 100%;
     
-    /* Make the content area full height and handle the scrolling */
-    height: 100vh; 
-    overflow-y: auto; 
+    /* FIX 1: Add a dedicated top padding to push content below the fixed header */
+    padding-top: var(--header-height); 
     
-    /* Critical for mobile: prevent content from going under the fixed button */
-    position: absolute; 
-    top: 0;
-    left: 0;
-    right: 0;
+    /* FIX 2: Ensure final bottom space is correct (Button Height 70px + 5px gap) */
+    padding-bottom: 75px; 
 }
+
 
 #main-ui-content.blurred {
     filter: blur(5px);
@@ -77,21 +83,24 @@ h1 { margin: 0; }
 
 /* FIX: Ensure chat messages push each other down correctly */
 #chat-messages {
+    /* REMOVE the default 1rem padding from the top */
     padding: 1rem;
+    padding-top: 0.5rem; /* Use a small padding on top for a cleaner look */
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 8px;
 }
 
 /* Ensure the fixed header overlaps correctly */
 /* 1. Ensure Header is truly fixed and occupies space */
 header {
-    position: fixed;
+    position: fixed; 
     top: 0;
     width: 100%;
     max-width: 500px;
+    z-index: 20;
     height: var(--header-height); /* e.g., 60px */
-    z-index: 100;
 }
 
 /* --- Product Results Card (General Chat Styles) --- */
@@ -213,27 +222,14 @@ header {
 
 
 /* --- CRITICAL BUTTON VISIBILITY FIX --- */
-/* --- Scan Button Container --- */
 #button-container {
-    /* CRITICAL FIX: Ensure visibility and positioning */
-    position: fixed !important; 
-    bottom: 0 !important; /* Force it to the bottom edge */
-    
-    /* Ensure sizing is correct */
-    left: 0;
-    right: 0;
-    padding: 0.5rem 1rem;
-    background-color: #000;
-    text-align: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    /* Use flex-shrink: 0 to ensure it keeps its size */
+    flex-shrink: 0; 
     height: var(--button-height);
-    max-width: 500px;
-    margin: 0 auto;
-    z-index: 1000; /* Ensure it is the highest element */
-    
-    display: flex; /* Use flex to center the button */
-    justify-content: center;
-    align-items: center;
+    background-color: #000;
+    z-index: 10; /* Ensure button stays on top */
+    padding-top: 5px; /* Additional padding for separation */
+    text-align: center;
 }
 
 

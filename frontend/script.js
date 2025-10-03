@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- UI Functions (No change in logic, just included for completeness) ---
 function addMessage(sender, content, type = 'text') {
+    mainUiContent.scrollTop = mainUiContent.scrollHeight; 
     const bubble = document.createElement('div');
     bubble.classList.add('chat-bubble');
     if (sender === 'bot') {
@@ -114,15 +115,16 @@ function fetchFoodData(barcode) {
 function displayProductInfo(data) {
     const productName = data.product_name;
     const score = data.health_score;
+    const healthStatus = data.health_status; // <--- CRITICAL: Capture the explicit status from the backend
     const ingredientsText = data.ingredients_text;
     const flaggedChemicals = data.flagged_chemicals; 
     const diseaseWarnings = data.disease_warnings;
 
-    const ratingText = getRatingText(score);
+    // ratingText is now redundant, but ratingColor/scoreEmoji are still needed for styling
     const ratingColor = getRatingColor(score);
     const scoreEmoji = getRatingEmoji(score);
 
-    // --- 1. Disease Warning Box ---
+    // --- 1. Disease Warning Box (Enhanced) ---
     let diseaseHtml = '';
     if (diseaseWarnings && diseaseWarnings.length > 0) {
         diseaseHtml = `
@@ -139,16 +141,16 @@ function displayProductInfo(data) {
         `;
     }
 
-    // --- 2. Health Score Header ---
+    // --- 2. Health Score Header (UPDATED TO USE healthStatus) ---
     const scoreHeader = `
         <h3 style="color: ${ratingColor}; margin-bottom: 5px;">${scoreEmoji} ${productName || 'Product Name N/A'}</h3>
         <p style="font-size: 1rem; margin: 0 0 10px;">
-            Overall Health Score: <strong>${ratingText} (${score}/100)</strong>
+            Overall Health Score: <strong>${healthStatus} (${score}/100)</strong>
         </p>
         <div class="rating-bar"><div class="rating-fill" style="--rating-width: ${score}%; --rating-color: ${ratingColor};"></div></div>
     `;
 
-    // --- 3. Flagged Chemical Details ---
+    // --- 3. Flagged Chemical Details (No Change) ---
     let harmfulHtml = '';
     if (flaggedChemicals.length > 0) {
         harmfulHtml = '<h4>🚨 Detailed Chemical Insights:</h4><ul id="harmful-list">';
@@ -162,7 +164,7 @@ function displayProductInfo(data) {
         harmfulHtml += '</ul>';
     }
 
-    // --- 4. Ingredient List (Scrollable) ---
+    // --- 4. Ingredient List (Scrollable - No Change) ---
     let ingredientsHtml = '<h4 style="margin-top: 1.5rem; border-bottom: 1px solid #444; padding-bottom: 5px;">🧬 Full Ingredient Breakdown:</h4><ul style="max-height: 150px; overflow-y: auto; padding-right: 5px;">';
     const ingredientArray = ingredientsText ? ingredientsText.split(',').map(item => item.trim()).filter(item => item.length > 0) : [];
     
