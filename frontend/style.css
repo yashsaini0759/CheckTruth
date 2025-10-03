@@ -71,7 +71,7 @@ h1 { margin: 0; }
     padding-top: var(--header-height); 
     
     /* FIX 2: Ensure final bottom space is correct (Button Height 70px + 5px gap) */
-    padding-bottom: 75px; 
+    padding-bottom: 90px !important;
 }
 
 
