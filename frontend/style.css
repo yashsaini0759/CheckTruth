@@ -34,7 +34,6 @@ body, html {
     height: 100vh;
     max-width: 500px; 
     margin: 0 auto;
-    position: relative;
     overflow: hidden;
 }
 
@@ -222,14 +221,29 @@ header {
 
 
 /* --- CRITICAL BUTTON VISIBILITY FIX --- */
+/* 2. Update the #button-container (The Final Fix) */
 #button-container {
-    /* Use flex-shrink: 0 to ensure it keeps its size */
-    flex-shrink: 0; 
-    height: var(--button-height);
+    /* Force position to viewport and set to bottom 0 */
+    position: fixed !important; 
+    bottom: 0 !important;
+    
+    /* Ensure width covers the viewport but is centered within max-width */
+    width: 100% !important; 
+    max-width: 500px !important;
+    
+    /* Ensure it has the highest priority */
+    z-index: 1000 !important; 
+    
+    /* ... rest of the styles (height, padding, etc.) ... */
+    height: 70px;
     background-color: #000;
-    z-index: 10; /* Ensure button stays on top */
-    padding-top: 5px; /* Additional padding for separation */
-    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
