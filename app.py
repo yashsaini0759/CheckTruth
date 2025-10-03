@@ -16,7 +16,6 @@ def after_request(response):
     return response
 
 # --- File Path Management ---
-# Finds the JSON file in the 'backend' folder, assuming app.py is in the root.
 json_path = os.path.join(os.path.dirname(__file__), 'backend', 'harmful_chemicals.json')
 try:
     with open(json_path, 'r') as f:
@@ -26,52 +25,156 @@ except FileNotFoundError:
     HARMFUL_CHEMICALS = {}
 
 
-# --- Genuine Health Score Algorithm ---
+# --- Genuine Health Score Algorithm (CheckTruth v7.0) ---
 def calculate_genuine_score(product, flagged_chemicals):
     """
-    Calculates a balanced health score (0-100) based on macro-nutrients and chemical risk.
+    Calculates a balanced health score (0-100) using 25+ macros/micros and weighted chemical risk.
     """
     nutriments = product.get('nutriments', {})
     
-    # Safely get macro data (defaults to 0 if not present)
+    # --- Safely Get 25+ Nutritional Metrics (Defaults to 0) ---
     sugars = nutriments.get('sugars_100g', 0)
     sat_fat = nutriments.get('saturated-fat_100g', 0)
-    salt = nutriments.get('salt_100g', 0)
+    sodium = nutriments.get('sodium_100g', 0)
+    trans_fat = nutriments.get('trans-fat_100g', 0)
+    cholesterol = nutriments.get('cholesterol_100g', 0)
+    energy_kcal = nutriments.get('energy-kcal_100g', 0)
+    total_fat = nutriments.get('fat_100g', 0)
+    carbohydrates = nutriments.get('carbohydrates_100g', 0)
     fiber = nutriments.get('fiber_100g', 0)
     protein = nutriments.get('proteins_100g', 0)
+    monounsaturated_fat = nutriments.get('monounsaturated-fat_100g', 0)
+    polyunsaturated_fat = nutriments.get('polyunsaturated-fat_100g', 0)
+    calcium = nutriments.get('calcium_100g', 0)
+    iron = nutriments.get('iron_100g', 0)
+    vitamin_c = nutriments.get('vitamin-c_100g', 0)
+    vitamin_d = nutriments.get('vitamin-d_100g', 0)
+    vitamin_a = nutriments.get('vitamin-a_100g', 0)
+    potassium = nutriments.get('potassium_100g', 0)
+    magnesium = nutriments.get('magnesium_100g', 0)
+    zinc = nutriments.get('zinc_100g', 0)
+    omega_3 = nutriments.get('omega-3-fat_100g', 0)
+    omega_6 = nutriments.get('omega-6-fat_100g', 0)
     
-    # --- 1. BASELINE SCORE (Initial 50 Points) ---
-    score = 50 
+    # --- Daily Value (DV) approximations for 100g comparison ---
+    DV_SAT_FAT = 0.20  
+    DV_SODIUM = 2.30  
+    DV_SUGAR_ADD = 0.50
+    DV_FIBER = 0.28
+    DV_PROTEIN = 0.50
     
-    # --- 2. MACRO PENALTY (Max -30 points) ---
-    score -= min(10, sugars / 5) 
-    score -= min(10, sat_fat * 2) 
-    sodium_mg = salt * 400
-    score -= min(10, sodium_mg / 200)
+    # --- 1. BASELINE SCORE ---
+    score = 100 
+    
+    # --- 2. AGGRESSIVE PENALTIES (Deduction based on %DV and impact) ---
+    macro_penalty = 0
+    
+    # A. SATURATED FAT PENALTY (Max 20 points)
+    sat_fat_dv_ratio = sat_fat / DV_SAT_FAT if DV_SAT_FAT > 0 else 0
+    macro_penalty += min(20, sat_fat_dv_ratio * 10) 
+    
+    # B. SODIUM PENALTY (Max 15 points)
+    sodium_dv_ratio = sodium / DV_SODIUM if DV_SODIUM > 0 else 0
+    macro_penalty += min(15, sodium_dv_ratio * 10)
+    
+    # C. SUGAR PENALTY (Max 15 points)
+    sugar_dv_ratio = sugars / DV_SUGAR_ADD if DV_SUGAR_ADD > 0 else 0
+    macro_penalty += min(15, sugar_dv_ratio * 10)
+    
+    # D. TRANS FAT PENALTY (SEVERE - Max 10 points)
+    if trans_fat > 0.001: 
+        macro_penalty += 10
+    
+    # E. CHOLESTEROL & CALORIE DENSITY PENALTY (Max 5 points)
+    cholesterol_penalty = min(3, (cholesterol / 0.3) * 5)
+    calorie_penalty = min(2, (energy_kcal / 500)) 
+    
+    macro_penalty += (cholesterol_penalty + calorie_penalty)
+    score -= macro_penalty
 
-    # --- 3. MACRO BONUS (Max +20 points) ---
-    score += min(10, fiber * 2)
-    score += min(10, protein * 1)
+    # --- 3. BENEFICIAL MACRO BONUSES (Reward up to 30 points total) ---
+    macro_bonus = 0
+    
+    # F. FIBER BONUS (Max 10 points)
+    fiber_dv_ratio = fiber / DV_FIBER if DV_FIBER > 0 else 0
+    macro_bonus += min(10, fiber_dv_ratio * 10) 
+    
+    # G. PROTEIN BONUS (Max 10 points)
+    protein_dv_ratio = protein / DV_PROTEIN if DV_PROTEIN > 0 else 0
+    macro_bonus += min(10, protein_dv_ratio * 10) 
+    
+    # H. HEALTHY FAT BONUS (Poly/Mono/Omega 3 - Max 5 points)
+    healthy_fats_score = monounsaturated_fat + polyunsaturated_fat + omega_3
+    macro_bonus += min(5, healthy_fats_score * 0.5) 
 
-    # --- 4. CHEMICAL RISK PENALTY (Max -40 points) ---
-    chemical_penalty = 0
+    # I. MICRONUTRIENT BONUS (Max 5 points)
+    micro_bonus_points = 0
+    if calcium > 0.05: micro_bonus_points += 1.5 
+    if iron > 0.0005: micro_bonus_points += 1.5
+    if vitamin_c > 0.005: micro_bonus_points += 0.5
+    if vitamin_a > 0.0005: micro_bonus_points += 0.5
+    if potassium > 0.05: micro_bonus_points += 0.5
+    if magnesium > 0.01: micro_bonus_points += 0.5
+
+    macro_bonus += min(5, micro_bonus_points)
+    score += macro_bonus
+    
+    # --- 4. CHEMICAL & PROCESSING PENALTY (Risk Weighting) ---
+    
+    chemical_risk_score = 0
+    num_severe_additives = 0
+    ingredients_list = product.get('ingredients', [])
+    
     for chem in flagged_chemicals:
         cause = chem.get('cause', '').lower()
         avoid = chem.get('avoid', '').lower()
         
+        # A. BANNED/CARCINOGENIC RISKS
         if "carcinogen" in cause or "banned" in avoid or "toxic" in avoid:
-            chemical_penalty += 8
-        elif "hyperactivity" in cause or "asthma" in avoid or "allergy" in avoid:
-            chemical_penalty += 5
-        elif "digestive" in cause or "caution" in avoid or "fda adverse event" in cause:
-            chemical_penalty += 3
+            chemical_risk_score += 15 
+            num_severe_additives += 1
         
-    score -= min(40, chemical_penalty)
+        # B. HEALTH/DIGESTIVE RISKS
+        elif "hyperactivity" in cause or "gastrointestinal" in cause or "inflammation" in cause:
+            chemical_risk_score += 8
+            num_severe_additives += 1
+        
+        # C. MINOR/CAUTION RISKS
+        else:
+            chemical_risk_score += 4
+            
+        # Penalty for Quantity/Density 
+        chem_name = chem.get('name', '').lower()
+        try:
+            position = [i for i, item in enumerate(ingredients_list) if item and chem_name in item.get('text', '').lower()][0]
+            if position < 3: 
+                 chemical_risk_score += 10 
+        except IndexError:
+            pass
 
-    # --- 5. FINAL CLAMPING ---
-    return int(max(0, min(100, score)))
+    score -= min(40, chemical_risk_score)
+    
+    # --- 5. ULTRA-PROCESSING PENALTY (Final Aggressive Check) ---
+    if (protein + fiber) < 5 and num_severe_additives >= 3:
+        score -= 20 
 
-# --- Layer 3: Dynamic FDA Check Function ---
+    # --- 6. FINAL CLAMPING AND HEALTHY CHECK ---
+    final_score = int(max(0, min(100, score)))
+    
+    # Determine Health Status 
+    health_status = ""
+    if final_score >= 85 and fiber >= 2 and sat_fat <= 5 and sugars <= 5:
+        health_status = "💚 Genuinely Healthy"
+    elif final_score >= 60:
+        health_status = "💙 Good Choice"
+    elif final_score < 40:
+        health_status = "💔 Warning: Unhealthy"
+    else:
+        health_status = "💛 Average/Caution"
+    
+    return final_score, health_status
+
+# --- Layer 3: Dynamic FDA Check Function (remains the same) ---
 def check_fda_adverse_events(ingredient_name):
     """
     Queries the openFDA API for adverse event reports.
@@ -104,7 +207,7 @@ def check_fda_adverse_events(ingredient_name):
         return False, ""
 
 
-# --- API Endpoint: Data Analysis ---
+# --- API Endpoint: Data Analysis (remains the same) ---
 @app.route('/api/analyze/<barcode>')
 def analyze_food(barcode):
     open_food_facts_url = f'https://world.openfoodfacts.org/api/v0/product/{barcode}.json'
@@ -151,7 +254,7 @@ def analyze_food(barcode):
                     })
 
         # 4. Calculate Final Health Score
-        score = calculate_genuine_score(product, flagged_chemicals)
+        score, health_status = calculate_genuine_score(product, flagged_chemicals)
 
         # Final Response
         return jsonify({
@@ -160,6 +263,7 @@ def analyze_food(barcode):
             'ingredients_text': product.get('ingredients_text', 'No ingredients listed.'),
             'flagged_chemicals': flagged_chemicals,
             'health_score': score,
+            'health_status': health_status,
             'disease_warnings': sorted(list(disease_warnings))
         })
 
@@ -175,11 +279,11 @@ def analyze_food(barcode):
 @app.route('/')
 def serve_index():
     """Serves the main HTML file when the user visits the root URL."""
-    # Because static_folder='frontend', Flask looks inside that folder.
+    # Flask serves assets from the 'frontend' static folder.
     return app.send_static_file('index.html')
 
 @app.route('/<path:filename>')
 def serve_static(filename):
     """Serves all static assets (CSS, JS, etc.) from the frontend directory."""
-    # Flask serves assets from the 'frontend' static folder.
+    # This handles requests for files like 'style.css' or 'script.js' directly.
     return app.send_static_file(filename)
