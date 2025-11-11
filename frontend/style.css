@@ -37,6 +37,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* ==================== MAIN LAYOUT ==================== */
@@ -352,16 +353,6 @@ header h1 {
     position: relative;
     border: 3px solid var(--accent-color);
     box-shadow: 0 0 30px rgba(224, 64, 251, 0.5);
-    animation: pulse-glow 2s infinite alternate ease-in-out;
-}
-
-@keyframes pulse-glow {
-    from { 
-        box-shadow: 0 0 20px rgba(224, 64, 251, 0.4);
-    }
-    to { 
-        box-shadow: 0 0 40px rgba(224, 64, 251, 0.8);
-    }
 }
 
 #scanner-view video {
@@ -370,12 +361,73 @@ header h1 {
     object-fit: cover;
 }
 
+/* ==================== BREATHING CROSSHAIR ==================== */
+#scanner-crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+}
+
+.crosshair-line {
+    position: absolute;
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+    animation: breathe 2s ease-in-out infinite;
+}
+
+.crosshair-top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40px;
+}
+
+.crosshair-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40px;
+}
+
+.crosshair-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 3px;
+}
+
+.crosshair-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 3px;
+}
+
+@keyframes breathe {
+    0%, 100% {
+        opacity: 0.6;
+        filter: brightness(0.8);
+    }
+    50% {
+        opacity: 1;
+        filter: brightness(1.2);
+    }
+}
+
 #scan-feedback {
     margin-top: 1.5rem;
     color: var(--text-light);
     font-size: 1rem;
     text-align: center;
-    animation: fadeInOut 1.5s infinite;
+    animation: fadeInOut 2s infinite;
 }
 
 @keyframes fadeInOut {
@@ -404,10 +456,16 @@ header h1 {
     justify-content: center;
 }
 
-#close-scanner-button:hover {
+#close-scanner-button:hover,
+#close-scanner-button:focus {
     background: rgba(244, 67, 54, 0.8);
     border-color: var(--color-danger);
     transform: rotate(90deg);
+    outline: none;
+}
+
+#close-scanner-button:active {
+    transform: rotate(90deg) scale(0.95);
 }
 
 /* ==================== SCAN BUTTON ==================== */
@@ -443,15 +501,27 @@ header h1 {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
-#scan-button:hover {
+#scan-button:hover,
+#scan-button:focus {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(224, 64, 251, 0.6);
+    outline: none;
 }
 
 #scan-button:active {
     transform: scale(0.97);
+}
+
+/* Remove blue highlight on mobile */
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* ==================== SCROLLBAR STYLING ==================== */
@@ -494,5 +564,10 @@ header h1 {
     
     header h1 {
         font-size: 1.1rem;
+    }
+    
+    #scanner-crosshair {
+        width: 180px;
+        height: 180px;
     }
 }

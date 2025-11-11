@@ -2,10 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-w<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheckTruth - Food Scanner</title>
     <link rel="stylesheet" href="style.css">
@@ -15,29 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
     <main id="app-container">
-        <!-- Fixed Header -->
+        
+        <!-- 1. FIXED HEADER (Flex-shrink: 0 in CSS) -->
         <header>
             <h1>🔍 CheckTruth</h1>
         </header>
 
-        <!-- Scrollable Chat Area -->
+        <!-- 2. SCROLLING CONTENT AREA (Flex-grow: 1 in CSS) -->
         <div id="main-ui-content">
             <div id="chat-messages">
+                <!-- CRITICAL CSS FIX: The overlapping is solved by adding 
+                     padding-top: var(--header-height) to #main-ui-content in CSS. -->
                 <div class="chat-bubble bot-bubble">
                     <p>👋 Welcome to CheckTruth! Scan any food item's barcode to discover detailed ingredient analysis and health insights.</p>
                 </div>
             </div>
         </div>
         
-        <!-- Fixed Scan Button -->
+        <!-- 3. FIXED SCAN BUTTON (Flex-shrink: 0 in CSS) -->
         <div id="button-container">
             <button id="scan-button" class="action-button">
                 <i class="fas fa-barcode"></i> SCAN PRODUCT
             </button>
         </div>
         
-        <!-- Scanner Overlay -->
+        <!-- 4. SCANNER OVERLAY (Fixed to viewport, high z-index) -->
         <div id="scanner-wrapper" class="hidden">
             <button id="close-scanner-button" class="action-button">
                 <i class="fas fa-times"></i>
@@ -45,56 +45,13 @@
             <div id="scanner-view">
                 <video id="interactive" class="viewport"></video>
                 <div id="scanner-overlay"></div>
-            </div>
-            <p id="scan-feedback">Position barcode within frame</p>
-        </div>
-    </main>
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
-    <script src="script.js"></script>
-</body>
-</html>idth, initial-scale=1.0">
-    <title>CheckTruth Scan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-
-    <main id="app-container">
-        
-        <header>
-            <h1>CheckTruth</h1>
-        </header>
-
-        <div id="main-ui-content">
-            <div id="chat-messages">
-                <div class="chat-bubble bot-bubble">
-                    <p>👋 Welcome to CheckTruth! Scan any food item's barcode to learn about its ingredients.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div id="button-container">
-            <button id="scan-button" class="action-button">SCAN</button>
-        </div>
-        
-        <div id="scanner-wrapper" class="hidden">
-            <button id="close-scanner-button" class="action-button">
-                <i class="fas fa-times"></i>
-            </button>
-            <div id="scanner-view">
-                <video id="interactive" class="viewport"></video>
-                <div id="scanner-overlay"></div>
-                <div id="scan-feedback" class="hidden">Scanning...</div>
+                <p id="scan-feedback" class="hidden">Position barcode within frame</p>
             </div>
         </div>
         
     </main>
 
+    <!-- Scripts -->
     <script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
     <script src="script.js"></script>
 </body>

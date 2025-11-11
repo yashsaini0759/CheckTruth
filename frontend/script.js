@@ -1,5 +1,6 @@
 // ==================== GLOBAL CONFIGURATION ====================
 const codeReader = new ZXing.BrowserMultiFormatReader();
+let currentStream = null;
 
 // DOM Elements
 const elements = {
@@ -9,7 +10,8 @@ const elements = {
     scanButton: document.getElementById('scan-button'),
     scanFeedback: document.getElementById('scan-feedback'),
     mainUiContent: document.getElementById('main-ui-content'),
-    closeScannerButton: document.getElementById('close-scanner-button')
+    closeScannerButton: document.getElementById('close-scanner-button'),
+    videoElement: document.getElementById('interactive')
 };
 
 // ==================== EVENT LISTENERS ====================
@@ -35,12 +37,6 @@ function handleCloseScanner() {
 }
 
 // ==================== UI FUNCTIONS ====================
-/**
- * Add a message to the chat interface
- * @param {string} sender - 'user', 'bot', or 'product'
- * @param {string} content - Message content (HTML for product)
- * @param {string} type - Message type (default: 'text')
- */
 function addMessage(sender, content, type = 'text') {
     const bubble = document.createElement('div');
     bubble.classList.add('chat-bubble');
@@ -60,9 +56,6 @@ function addMessage(sender, content, type = 'text') {
     scrollToBottom();
 }
 
-/**
- * Scroll chat to bottom smoothly
- */
 function scrollToBottom() {
     setTimeout(() => {
         elements.mainUiContent.scrollTo({
@@ -73,89 +66,71 @@ function scrollToBottom() {
 }
 
 // ==================== SCANNER FUNCTIONS ====================
-/**
- * Show the barcode scanner overlay
- */
 function showScanner() {
     elements.mainUiContent.classList.add('blurred');
     elements.scannerWrapper.classList.remove('hidden');
     elements.scanButton.classList.add('hidden');
     elements.closeScannerButton.classList.remove('hidden');
+    elements.scanFeedback.classList.remove('hidden');
     
     initializeBarcodeScanner();
 }
 
-/**
- * Hide the barcode scanner overlay
- */
 function hideScanner() {
     elements.mainUiContent.classList.remove('blurred');
     elements.scannerWrapper.classList.add('hidden');
     elements.scanButton.classList.remove('hidden');
     elements.closeScannerButton.classList.add('hidden');
+    elements.scanFeedback.classList.add('hidden');
     
+    // Stop camera stream and reset reader
     if (codeReader) {
         codeReader.reset();
     }
 }
 
-/**
- * Initialize and start barcode scanning
- */
 function initializeBarcodeScanner() {
-    codeReader.getVideoInputDevices()
-        .then((videoInputDevices) => {
-            if (videoInputDevices.length === 0) {
-                throw new Error('No camera found');
-            }
-            
-            // Prefer rear camera
-            const rearCamera = videoInputDevices.find(device => 
-                device.label.toLowerCase().includes('back')
-            ) || videoInputDevices[0];
-            
-            const deviceId = rearCamera ? rearCamera.deviceId : undefined;
-            
-            return codeReader.decodeFromInputVideoDevice(deviceId, 'interactive');
-        })
-        .then((result) => {
+    console.log('Initializing barcode scanner...');
+    
+    // Use ZXing's simple method to start scanning
+    codeReader.decodeFromVideoDevice(null, 'interactive', (result, err) => {
+        if (result) {
+            console.log('Barcode detected:', result.text);
             handleSuccessfulScan(result.text);
-        })
-        .catch((err) => {
-            handleScanError(err);
-        });
+        }
+        if (err) {
+            if (!(err instanceof ZXing.NotFoundException)) {
+                console.log('Scanning in progress...', err);
+            }
+        }
+    }).then(() => {
+        console.log('Scanner started successfully');
+    }).catch((err) => {
+        console.error('Failed to start scanner:', err);
+        handleScanError(err);
+    });
 }
 
-/**
- * Handle successful barcode scan
- * @param {string} barcode - Scanned barcode text
- */
 function handleSuccessfulScan(barcode) {
     hideScanner();
     addMessage('user', `Scanned: ${barcode}`);
     fetchFoodData(barcode);
 }
 
-/**
- * Handle scanner errors
- * @param {Error} err - Error object
- */
 function handleScanError(err) {
     console.error('Scanner error:', err);
     hideScanner();
     
-    if (err.message.includes('No camera found') || err.name === 'NotAllowedError') {
-        addMessage('bot', '📷 Camera access denied. Please allow camera permissions in your browser settings.');
-    } else if (err.name !== 'NotFoundException') {
-        addMessage('bot', '❌ Scanning error. Please ensure good lighting and try again.');
+    if (err.name === 'NotAllowedError') {
+        addMessage('bot', '📷 Camera access denied. Please allow camera permissions and try again.');
+    } else if (err.name === 'NotFoundError') {
+        addMessage('bot', '📷 No camera found on your device.');
+    } else {
+        addMessage('bot', '❌ Scanner error: ' + err.message);
     }
 }
 
 // ==================== DATA FETCHING ====================
-/**
- * Fetch food data from backend API
- * @param {string} barcode - Product barcode
- */
 function fetchFoodData(barcode) {
     const apiUrl = `https://checktruth.onrender.com/api/analyze/${barcode}`;
     
@@ -184,10 +159,6 @@ function fetchFoodData(barcode) {
 }
 
 // ==================== PRODUCT DISPLAY ====================
-/**
- * Display comprehensive product information
- * @param {Object} data - Product data from API
- */
 function displayProductInfo(data) {
     const {
         product_name,
@@ -202,22 +173,18 @@ function displayProductInfo(data) {
     const ratingColor = getRatingColor(health_score);
     const scoreEmoji = getRatingEmoji(health_score);
     
-    // Build HTML sections
     const sections = [
         buildScoreHeader(product_name, health_status, health_score, scoreEmoji, ratingColor),
         buildDiseaseWarning(disease_warnings),
         buildNutritionGrid(nutrition_facts),
         buildChemicalInsights(flagged_chemicals),
         buildIngredientsList(ingredients_text, flagged_chemicals)
-    ].filter(Boolean); // Remove empty sections
+    ].filter(Boolean);
     
     const content = sections.join('');
     addMessage('product', content);
 }
 
-/**
- * Build health score header section
- */
 function buildScoreHeader(productName, healthStatus, score, emoji, color) {
     return `
         <h3 style="color: ${color}; margin-bottom: 0.5rem; font-size: 1.25rem;">
@@ -232,9 +199,6 @@ function buildScoreHeader(productName, healthStatus, score, emoji, color) {
     `;
 }
 
-/**
- * Build disease warning section
- */
 function buildDiseaseWarning(warnings) {
     if (!warnings || warnings.length === 0) return '';
     
@@ -253,9 +217,6 @@ function buildDiseaseWarning(warnings) {
     `;
 }
 
-/**
- * Build nutrition facts grid
- */
 function buildNutritionGrid(nutritionFacts) {
     if (!nutritionFacts) return '';
     
@@ -298,9 +259,6 @@ function buildNutritionGrid(nutritionFacts) {
     return gridHtml;
 }
 
-/**
- * Build chemical insights section
- */
 function buildChemicalInsights(flaggedChemicals) {
     if (!flaggedChemicals || flaggedChemicals.length === 0) {
         return '<h4>✅ No Concerning Chemicals Detected</h4><p style="color: #4CAF50;">This product appears safe based on current ingredient analysis.</p>';
@@ -326,9 +284,6 @@ function buildChemicalInsights(flaggedChemicals) {
     return html;
 }
 
-/**
- * Build complete ingredients list
- */
 function buildIngredientsList(ingredientsText, flaggedChemicals) {
     const ingredientArray = ingredientsText 
         ? ingredientsText.split(',').map(item => item.trim()).filter(item => item.length > 0)
@@ -354,11 +309,6 @@ function buildIngredientsList(ingredientsText, flaggedChemicals) {
 }
 
 // ==================== RATING UTILITIES ====================
-/**
- * Get emoji based on health score
- * @param {number} score - Health score (0-100)
- * @returns {string} Emoji
- */
 function getRatingEmoji(score) {
     if (score >= 80) return '💚';
     if (score >= 60) return '💙';
@@ -367,15 +317,10 @@ function getRatingEmoji(score) {
     return '💔';
 }
 
-/**
- * Get color based on health score
- * @param {number} score - Health score (0-100)
- * @returns {string} Hex color
- */
 function getRatingColor(score) {
-    if (score >= 80) return '#8BC34A'; // Green
-    if (score >= 60) return '#2196F3'; // Blue
-    if (score >= 40) return '#FFC107'; // Amber
-    if (score >= 20) return '#FF9800'; // Orange
-    return '#F44336'; // Red
+    if (score >= 80) return '#8BC34A';
+    if (score >= 60) return '#2196F3';
+    if (score >= 40) return '#FFC107';
+    if (score >= 20) return '#FF9800';
+    return '#F44336';
 }
