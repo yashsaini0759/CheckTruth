@@ -3,7 +3,11 @@
     "name": "Monosodium Glutamate (MSG/E621)",
     "cause": "Known to trigger allergic reactions and headaches in sensitive individuals.",
     "avoid": "Individuals sensitive to MSG, migraine sufferers, patients with asthma.",
-    "diseases_to_avoid": ["Migraines", "Asthma", "Obesity"],
+    "diseases_to_avoid": [
+      "Migraines",
+      "Asthma",
+      "Obesity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -27,7 +31,11 @@
     "name": "High Fructose Corn Syrup (HFCS)",
     "cause": "Rapid blood sugar spike, linked to non-alcoholic fatty liver disease.",
     "avoid": "Patients with diabetes, pre-diabetes, and NAFLD.",
-    "diseases_to_avoid": ["Diabetes", "Obesity", "NAFLD"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Obesity",
+      "NAFLD"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 281,
@@ -51,7 +59,11 @@
     "name": "Refined Sugar",
     "cause": "Contributes to weight gain, high blood sugar, and insulin resistance.",
     "avoid": "Patients with diabetes, pre-diabetes, and obesity.",
-    "diseases_to_avoid": ["Diabetes", "Obesity", "Insulin Resistance"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Obesity",
+      "Insulin Resistance"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 387,
@@ -75,7 +87,10 @@
     "name": "Brown Sugar",
     "cause": "High sugar content with minimal nutritional benefits.",
     "avoid": "Patients with diabetes, pre-diabetes.",
-    "diseases_to_avoid": ["Diabetes", "Obesity"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Obesity"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 380,
@@ -99,7 +114,10 @@
     "name": "Palm Oil",
     "cause": "High saturated fat content, linked to heart disease.",
     "avoid": "Individuals with high cholesterol or heart conditions.",
-    "diseases_to_avoid": ["High Cholesterol", "Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "High Cholesterol",
+      "Cardiovascular Disease"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 884,
@@ -123,7 +141,9 @@
     "name": "Coconut Oil",
     "cause": "Very high in saturated fat.",
     "avoid": "Individuals with high LDL cholesterol.",
-    "diseases_to_avoid": ["High Cholesterol"],
+    "diseases_to_avoid": [
+      "High Cholesterol"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 862,
@@ -147,7 +167,10 @@
     "name": "Butter",
     "cause": "High in saturated fat and cholesterol.",
     "avoid": "Individuals with heart disease or high cholesterol.",
-    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease",
+      "High Cholesterol"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 717,
@@ -171,7 +194,10 @@
     "name": "Ghee (Clarified Butter)",
     "cause": "High in saturated fat.",
     "avoid": "Individuals with high LDL cholesterol.",
-    "diseases_to_avoid": ["High Cholesterol", "Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "High Cholesterol",
+      "Cardiovascular Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 900,
@@ -195,7 +221,10 @@
     "name": "Vegetable Shortening",
     "cause": "Often contains trans fats and high saturated fat.",
     "avoid": "Individuals with heart disease.",
-    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease",
+      "High Cholesterol"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 884,
@@ -219,7 +248,9 @@
     "name": "Margarine",
     "cause": "Often contains trans fats.",
     "avoid": "Individuals with cardiovascular issues.",
-    "diseases_to_avoid": ["Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 717,
@@ -243,7 +274,10 @@
     "name": "Table Salt",
     "cause": "High sodium content increases blood pressure.",
     "avoid": "Patients with hypertension, kidney disease.",
-    "diseases_to_avoid": ["Hypertension", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -267,7 +301,9 @@
     "name": "Soy Sauce",
     "cause": "Very high in sodium.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 53,
@@ -291,7 +327,10 @@
     "name": "Refined Wheat Flour (Maida)",
     "cause": "Highly processed with high glycemic index.",
     "avoid": "Individuals with diabetes or celiac disease.",
-    "diseases_to_avoid": ["Diabetes", "Celiac Disease"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Celiac Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 364,
@@ -315,7 +354,9 @@
     "name": "Whole Wheat Flour (Atta)",
     "cause": "Contains gluten.",
     "avoid": "Individuals with celiac disease.",
-    "diseases_to_avoid": ["Celiac Disease"],
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 340,
@@ -339,7 +380,9 @@
     "name": "Gram Flour (Besan)",
     "cause": "May cause bloating in sensitive individuals.",
     "avoid": "Individuals with chickpea allergy.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 387,
@@ -363,7 +406,9 @@
     "name": "Rice Flour",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 366,
@@ -387,7 +432,9 @@
     "name": "Corn Flour",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 375,
@@ -411,7 +458,9 @@
     "name": "Potato Starch",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 357,
@@ -435,7 +484,10 @@
     "name": "Maltodextrin",
     "cause": "Rapid blood sugar spike.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes", "Insulin Resistance"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Insulin Resistance"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 380,
@@ -459,7 +511,9 @@
     "name": "Dextrose",
     "cause": "Rapid blood sugar spike.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 387,
@@ -483,7 +537,9 @@
     "name": "Jaggery (Gud)",
     "cause": "High sugar content.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 383,
@@ -507,7 +563,9 @@
     "name": "Honey",
     "cause": "High sugar content.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 304,
@@ -531,7 +589,9 @@
     "name": "Maple Syrup",
     "cause": "High sugar content.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 260,
@@ -555,7 +615,10 @@
     "name": "Agave Syrup",
     "cause": "Very high in fructose.",
     "avoid": "Patients with diabetes or NAFLD.",
-    "diseases_to_avoid": ["Diabetes", "NAFLD"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "NAFLD"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 310,
@@ -579,7 +642,10 @@
     "name": "Whole Milk Powder",
     "cause": "High in saturated fat and lactose.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance", "High Cholesterol"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance",
+      "High Cholesterol"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 496,
@@ -603,7 +669,9 @@
     "name": "Skimmed Milk Powder",
     "cause": "High in lactose.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 362,
@@ -627,7 +695,9 @@
     "name": "Cream Powder",
     "cause": "High in saturated fat.",
     "avoid": "Individuals with high cholesterol.",
-    "diseases_to_avoid": ["High Cholesterol"],
+    "diseases_to_avoid": [
+      "High Cholesterol"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 595,
@@ -651,7 +721,9 @@
     "name": "Whey Protein",
     "cause": "May cause digestive issues in lactose intolerant.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 352,
@@ -675,7 +747,9 @@
     "name": "Casein Protein",
     "cause": "May cause digestive issues.",
     "avoid": "Individuals with milk protein allergy.",
-    "diseases_to_avoid": ["Milk Allergy"],
+    "diseases_to_avoid": [
+      "Milk Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 396,
@@ -699,7 +773,10 @@
     "name": "Soy Protein Isolate",
     "cause": "May affect thyroid function.",
     "avoid": "Individuals with soy allergy or thyroid issues.",
-    "diseases_to_avoid": ["Soy Allergy", "Thyroid Dysfunction"],
+    "diseases_to_avoid": [
+      "Soy Allergy",
+      "Thyroid Dysfunction"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 335,
@@ -723,7 +800,9 @@
     "name": "Egg Powder",
     "cause": "High in cholesterol.",
     "avoid": "Individuals with egg allergy.",
-    "diseases_to_avoid": ["Egg Allergy"],
+    "diseases_to_avoid": [
+      "Egg Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 592,
@@ -747,7 +826,9 @@
     "name": "Baking Powder",
     "cause": "High in sodium.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 53,
@@ -771,7 +852,9 @@
     "name": "Baking Soda",
     "cause": "Very high in sodium.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -795,7 +878,9 @@
     "name": "Yeast",
     "cause": "May cause bloating.",
     "avoid": "Individuals with yeast sensitivity.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 105,
@@ -819,7 +904,9 @@
     "name": "Gelatin",
     "cause": "Animal-derived, may contain allergens.",
     "avoid": "Vegetarians, vegans.",
-    "diseases_to_avoid": ["Religious Dietary Restrictions"],
+    "diseases_to_avoid": [
+      "Religious Dietary Restrictions"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 335,
@@ -843,7 +930,9 @@
     "name": "Pectin",
     "cause": "May cause digestive issues in large amounts.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 325,
@@ -867,7 +956,9 @@
     "name": "Xanthan Gum",
     "cause": "May cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 300,
@@ -891,7 +982,9 @@
     "name": "Guar Gum",
     "cause": "May cause bloating.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 320,
@@ -915,7 +1008,10 @@
     "name": "Carrageenan",
     "cause": "Linked to digestive inflammation.",
     "avoid": "Individuals with IBD or digestive issues.",
-    "diseases_to_avoid": ["IBD", "Digestive Issues"],
+    "diseases_to_avoid": [
+      "IBD",
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -939,7 +1035,9 @@
     "name": "Soy Lecithin",
     "cause": "Soy-derived, potential allergen.",
     "avoid": "Individuals with soy allergy.",
-    "diseases_to_avoid": ["Soy Allergy"],
+    "diseases_to_avoid": [
+      "Soy Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 763,
@@ -987,7 +1085,10 @@
     "name": "Sodium Benzoate (E211)",
     "cause": "Can form carcinogenic benzene with vitamin C.",
     "avoid": "Children, sensitive individuals.",
-    "diseases_to_avoid": ["Cancer Risk", "ADHD"],
+    "diseases_to_avoid": [
+      "Cancer Risk",
+      "ADHD"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -1011,7 +1112,9 @@
     "name": "Potassium Sorbate (E202)",
     "cause": "May cause skin irritation.",
     "avoid": "Individuals with sensitivities.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -1035,7 +1138,9 @@
     "name": "Calcium Propionate (E282)",
     "cause": "Linked to behavioral issues in children.",
     "avoid": "Children, sensitive individuals.",
-    "diseases_to_avoid": ["Behavioral Issues"],
+    "diseases_to_avoid": [
+      "Behavioral Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -1059,7 +1164,9 @@
     "name": "Sodium Nitrite (E250)",
     "cause": "Forms carcinogenic nitrosamines.",
     "avoid": "All consumers, especially cancer-risk individuals.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -1083,7 +1190,9 @@
     "name": "BHA (Butylated Hydroxyanisole)",
     "cause": "Suspected carcinogen.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 900,
@@ -1107,7 +1216,9 @@
     "name": "BHT (Butylated Hydroxytoluene)",
     "cause": "Suspected carcinogen.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 900,
@@ -1131,7 +1242,9 @@
     "name": "TBHQ (Tert-Butylhydroquinone)",
     "cause": "Potential neurotoxin in high doses.",
     "avoid": "Children, sensitive individuals.",
-    "diseases_to_avoid": ["Neurological Issues"],
+    "diseases_to_avoid": [
+      "Neurological Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 900,
@@ -1155,7 +1268,10 @@
     "name": "Aspartame (E951)",
     "cause": "Linked to migraines and neurological issues.",
     "avoid": "PKU patients, migraine sufferers.",
-    "diseases_to_avoid": ["PKU", "Migraines"],
+    "diseases_to_avoid": [
+      "PKU",
+      "Migraines"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 400,
@@ -1179,7 +1295,9 @@
     "name": "Sucralose (E955)",
     "cause": "May disrupt gut microbiome.",
     "avoid": "Individuals with digestive issues.",
-    "diseases_to_avoid": ["Digestive Issues"],
+    "diseases_to_avoid": [
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -1247,12 +1365,14 @@
       "vitamin_c_per_100g": 0
     }
   },
-
   "modified starch": {
     "name": "Modified Starch",
     "cause": "Highly processed, high glycemic index.",
     "avoid": "Individuals with diabetes or grain allergies.",
-    "diseases_to_avoid": ["Diabetes", "Grain Allergy"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Grain Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 380,
@@ -1276,7 +1396,10 @@
     "name": "Corn Syrup Solids",
     "cause": "Rapid blood sugar spike, highly processed.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes", "Obesity"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Obesity"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 385,
@@ -1300,7 +1423,9 @@
     "name": "Glucose Syrup",
     "cause": "High glycemic index, rapid sugar absorption.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 320,
@@ -1324,7 +1449,9 @@
     "name": "Invert Sugar Syrup",
     "cause": "High sugar content, rapid absorption.",
     "avoid": "Patients with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 350,
@@ -1348,7 +1475,9 @@
     "name": "Liquid Glucose",
     "cause": "Rapid blood sugar spike.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 340,
@@ -1372,7 +1501,10 @@
     "name": "Fructose",
     "cause": "Linked to fatty liver disease, high sugar content.",
     "avoid": "Patients with NAFLD or diabetes.",
-    "diseases_to_avoid": ["NAFLD", "Diabetes"],
+    "diseases_to_avoid": [
+      "NAFLD",
+      "Diabetes"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 400,
@@ -1396,7 +1528,9 @@
     "name": "Corn Starch",
     "cause": "High glycemic index, highly processed.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 381,
@@ -1420,7 +1554,9 @@
     "name": "Tapioca Starch",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 358,
@@ -1444,7 +1580,10 @@
     "name": "Wheat Starch",
     "cause": "High glycemic index, contains gluten.",
     "avoid": "Individuals with celiac disease or diabetes.",
-    "diseases_to_avoid": ["Celiac Disease", "Diabetes"],
+    "diseases_to_avoid": [
+      "Celiac Disease",
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 351,
@@ -1468,7 +1607,10 @@
     "name": "Soy Flour",
     "cause": "May affect thyroid function, common allergen.",
     "avoid": "Individuals with soy allergy or thyroid issues.",
-    "diseases_to_avoid": ["Soy Allergy", "Thyroid Dysfunction"],
+    "diseases_to_avoid": [
+      "Soy Allergy",
+      "Thyroid Dysfunction"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 436,
@@ -1492,7 +1634,10 @@
     "name": "Semolina (Rava)",
     "cause": "High glycemic index, contains gluten.",
     "avoid": "Individuals with celiac disease or diabetes.",
-    "diseases_to_avoid": ["Celiac Disease", "Diabetes"],
+    "diseases_to_avoid": [
+      "Celiac Disease",
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 360,
@@ -1516,7 +1661,10 @@
     "name": "Bread Crumbs",
     "cause": "High in sodium and processed carbohydrates.",
     "avoid": "Individuals with hypertension or diabetes.",
-    "diseases_to_avoid": ["Hypertension", "Diabetes"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 395,
@@ -1540,7 +1688,9 @@
     "name": "Cracker Meal",
     "cause": "Highly processed, high glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 420,
@@ -1564,7 +1714,9 @@
     "name": "Corn Meal",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 370,
@@ -1588,7 +1740,9 @@
     "name": "Oats Flour",
     "cause": "Generally healthy but may contain gluten.",
     "avoid": "Individuals with gluten sensitivity.",
-    "diseases_to_avoid": ["Celiac Disease"],
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 404,
@@ -1612,7 +1766,9 @@
     "name": "Barley Flour",
     "cause": "Contains gluten.",
     "avoid": "Individuals with celiac disease.",
-    "diseases_to_avoid": ["Celiac Disease"],
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 345,
@@ -1636,7 +1792,9 @@
     "name": "Rye Flour",
     "cause": "Contains gluten.",
     "avoid": "Individuals with celiac disease.",
-    "diseases_to_avoid": ["Celiac Disease"],
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 350,
@@ -1708,7 +1866,9 @@
     "name": "Almond Flour",
     "cause": "High in calories and fat.",
     "avoid": "Individuals with nut allergy.",
-    "diseases_to_avoid": ["Nut Allergy"],
+    "diseases_to_avoid": [
+      "Nut Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 579,
@@ -1732,7 +1892,9 @@
     "name": "Coconut Flour",
     "cause": "High in fiber, may cause digestive issues.",
     "avoid": "Individuals with coconut allergy.",
-    "diseases_to_avoid": ["Coconut Allergy"],
+    "diseases_to_avoid": [
+      "Coconut Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 443,
@@ -1756,7 +1918,9 @@
     "name": "Potato Flakes",
     "cause": "High glycemic index.",
     "avoid": "Individuals with diabetes.",
-    "diseases_to_avoid": ["Diabetes"],
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 354,
@@ -1780,7 +1944,10 @@
     "name": "Onion Powder",
     "cause": "High FODMAP, may cause digestive issues.",
     "avoid": "Individuals with IBS or FODMAP sensitivity.",
-    "diseases_to_avoid": ["IBS", "FODMAP Sensitivity"],
+    "diseases_to_avoid": [
+      "IBS",
+      "FODMAP Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 341,
@@ -1804,7 +1971,10 @@
     "name": "Garlic Powder",
     "cause": "High FODMAP, may cause digestive issues.",
     "avoid": "Individuals with IBS or FODMAP sensitivity.",
-    "diseases_to_avoid": ["IBS", "FODMAP Sensitivity"],
+    "diseases_to_avoid": [
+      "IBS",
+      "FODMAP Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 331,
@@ -1828,7 +1998,9 @@
     "name": "Ginger Powder",
     "cause": "May exacerbate acid reflux.",
     "avoid": "Individuals with severe GERD.",
-    "diseases_to_avoid": ["GERD"],
+    "diseases_to_avoid": [
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 335,
@@ -1852,7 +2024,9 @@
     "name": "Turmeric Powder",
     "cause": "May thin blood in high doses.",
     "avoid": "Individuals on blood thinners.",
-    "diseases_to_avoid": ["Bleeding Disorders"],
+    "diseases_to_avoid": [
+      "Bleeding Disorders"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 354,
@@ -1876,7 +2050,10 @@
     "name": "Red Chilli Powder",
     "cause": "Can irritate digestive lining.",
     "avoid": "Individuals with ulcers or GERD.",
-    "diseases_to_avoid": ["Ulcers", "GERD"],
+    "diseases_to_avoid": [
+      "Ulcers",
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 318,
@@ -1900,7 +2077,10 @@
     "name": "Black Pepper",
     "cause": "Can irritate digestive lining.",
     "avoid": "Individuals with ulcers or GERD.",
-    "diseases_to_avoid": ["Ulcers", "GERD"],
+    "diseases_to_avoid": [
+      "Ulcers",
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 255,
@@ -1924,7 +2104,10 @@
     "name": "White Pepper",
     "cause": "Can irritate digestive lining.",
     "avoid": "Individuals with ulcers or GERD.",
-    "diseases_to_avoid": ["Ulcers", "GERD"],
+    "diseases_to_avoid": [
+      "Ulcers",
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 296,
@@ -1996,7 +2179,9 @@
     "name": "Mustard Seeds",
     "cause": "Common allergen.",
     "avoid": "Individuals with mustard allergy.",
-    "diseases_to_avoid": ["Mustard Allergy"],
+    "diseases_to_avoid": [
+      "Mustard Allergy"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 508,
@@ -2020,7 +2205,9 @@
     "name": "Fenugreek Seeds",
     "cause": "Can lower blood sugar significantly.",
     "avoid": "Patients on diabetes medication.",
-    "diseases_to_avoid": ["Diabetes (Hypoglycemia Risk)"],
+    "diseases_to_avoid": [
+      "Diabetes (Hypoglycemia Risk)"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 323,
@@ -2068,7 +2255,10 @@
     "name": "Carom Seeds (Ajwain)",
     "cause": "Strong gas-releasing properties.",
     "avoid": "Individuals with severe GERD.",
-    "diseases_to_avoid": ["GERD", "Ulcers"],
+    "diseases_to_avoid": [
+      "GERD",
+      "Ulcers"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 305,
@@ -2092,7 +2282,9 @@
     "name": "Asafoetida (Hing)",
     "cause": "Can cause digestive issues in large amounts.",
     "avoid": "Pregnant women in high doses.",
-    "diseases_to_avoid": ["Pregnancy (Caution)"],
+    "diseases_to_avoid": [
+      "Pregnancy (Caution)"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 297,
@@ -2116,7 +2308,10 @@
     "name": "Dried Mango Powder (Amchur)",
     "cause": "Highly acidic.",
     "avoid": "Individuals with GERD.",
-    "diseases_to_avoid": ["GERD", "Acid Reflux"],
+    "diseases_to_avoid": [
+      "GERD",
+      "Acid Reflux"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 315,
@@ -2140,7 +2335,9 @@
     "name": "Dried Fenugreek Leaves",
     "cause": "Strong flavor, may cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 323,
@@ -2164,7 +2361,9 @@
     "name": "Black Salt (Kala Namak)",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2188,7 +2387,9 @@
     "name": "Rock Salt (Sendha Namak)",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2212,7 +2413,10 @@
     "name": "Chat Masala",
     "cause": "High sodium content, acidic.",
     "avoid": "Individuals with hypertension or GERD.",
-    "diseases_to_avoid": ["Hypertension", "GERD"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "GERD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 325,
@@ -2260,7 +2464,9 @@
     "name": "Pav Bhaji Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 355,
@@ -2284,7 +2490,9 @@
     "name": "Sambar Powder",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 365,
@@ -2308,7 +2516,9 @@
     "name": "Rasam Powder",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -2332,7 +2542,9 @@
     "name": "Biriyani Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 370,
@@ -2356,7 +2568,9 @@
     "name": "Tandoori Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 360,
@@ -2380,7 +2594,9 @@
     "name": "Chicken Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 375,
@@ -2404,7 +2620,9 @@
     "name": "Fish Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 368,
@@ -2428,7 +2646,10 @@
     "name": "Pani Puri Masala",
     "cause": "High sodium content, acidic.",
     "avoid": "Individuals with hypertension or GERD.",
-    "diseases_to_avoid": ["Hypertension", "GERD"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "GERD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 342,
@@ -2452,7 +2673,9 @@
     "name": "Bhel Puri Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 348,
@@ -2476,7 +2699,9 @@
     "name": "Sev Puri Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 352,
@@ -2500,7 +2725,9 @@
     "name": "Dahi Puri Masala",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 338,
@@ -2524,7 +2751,9 @@
     "name": "Papad Khar",
     "cause": "High sodium content, alkaline agent.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2548,7 +2777,9 @@
     "name": "Edible Soda",
     "cause": "High sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2572,7 +2803,10 @@
     "name": "Citric Acid",
     "cause": "Highly acidic, can erode tooth enamel.",
     "avoid": "Individuals with GERD or dental issues.",
-    "diseases_to_avoid": ["GERD", "Acid Reflux"],
+    "diseases_to_avoid": [
+      "GERD",
+      "Acid Reflux"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2596,7 +2830,9 @@
     "name": "Tartaric Acid",
     "cause": "Acidic, may cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2620,7 +2856,9 @@
     "name": "Malic Acid",
     "cause": "Acidic, may cause digestive issues.",
     "avoid": "Individuals with GERD.",
-    "diseases_to_avoid": ["GERD"],
+    "diseases_to_avoid": [
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2644,7 +2882,9 @@
     "name": "Fumaric Acid",
     "cause": "Acidic, may cause mouth irritation.",
     "avoid": "Individuals with ulcers.",
-    "diseases_to_avoid": ["Ulcers"],
+    "diseases_to_avoid": [
+      "Ulcers"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2668,7 +2908,9 @@
     "name": "Lactic Acid",
     "cause": "Acidic, may irritate ulcers.",
     "avoid": "Individuals with ulcers.",
-    "diseases_to_avoid": ["Ulcers"],
+    "diseases_to_avoid": [
+      "Ulcers"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2692,7 +2934,10 @@
     "name": "Acetic Acid (Vinegar)",
     "cause": "Highly acidic.",
     "avoid": "Individuals with GERD or ulcers.",
-    "diseases_to_avoid": ["GERD", "Ulcers"],
+    "diseases_to_avoid": [
+      "GERD",
+      "Ulcers"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 18,
@@ -2716,7 +2961,9 @@
     "name": "Ascorbic Acid (Vitamin C)",
     "cause": "Generally safe, but acidic.",
     "avoid": "Individuals with iron overload.",
-    "diseases_to_avoid": ["Hemochromatosis"],
+    "diseases_to_avoid": [
+      "Hemochromatosis"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -2736,12 +2983,14 @@
       "vitamin_c_per_100g": 100000
     }
   },
-
   "sodium glutamate": {
     "name": "Sodium Glutamate",
     "cause": "Flavor enhancer similar to MSG, may cause headaches and allergic reactions.",
     "avoid": "Individuals sensitive to MSG, migraine sufferers.",
-    "diseases_to_avoid": ["Migraines", "Asthma"],
+    "diseases_to_avoid": [
+      "Migraines",
+      "Asthma"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2761,13 +3010,13 @@
       "vitamin_c_per_100g": 0
     }
   },
-
-
   "calcium disodium edta": {
     "name": "Calcium Disodium EDTA (E385)",
     "cause": "Preservative that can bind to minerals, potentially causing mineral deficiencies.",
     "avoid": "Individuals with mineral deficiencies, children.",
-    "diseases_to_avoid": ["Mineral Deficiency"],
+    "diseases_to_avoid": [
+      "Mineral Deficiency"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2791,7 +3040,10 @@
     "name": "Sodium Metabisulfite (E223)",
     "cause": "Preservative that can trigger severe asthma attacks.",
     "avoid": "Asthma sufferers, individuals with sulfite sensitivity.",
-    "diseases_to_avoid": ["Asthma", "Allergies"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Allergies"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -2815,7 +3067,10 @@
     "name": "Potassium Metabisulfite (E224)",
     "cause": "Preservative that can cause allergic reactions and asthma.",
     "avoid": "Asthma sufferers, sensitive individuals.",
-    "diseases_to_avoid": ["Asthma", "Allergies"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Allergies"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -2839,7 +3094,10 @@
     "name": "Sodium Aluminum Phosphate",
     "cause": "Leavening agent containing aluminum, linked to neurological issues.",
     "avoid": "All consumers, especially children.",
-    "diseases_to_avoid": ["Neurological Issues", "Alzheimer's Risk"],
+    "diseases_to_avoid": [
+      "Neurological Issues",
+      "Alzheimer's Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -2863,7 +3121,9 @@
     "name": "Sodium Aluminum Sulfate",
     "cause": "Contains aluminum, potential neurotoxin.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Neurological Issues"],
+    "diseases_to_avoid": [
+      "Neurological Issues"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -2887,7 +3147,10 @@
     "name": "Ammonium Bicarbonate",
     "cause": "Leavening agent that releases ammonia gas, can irritate respiratory system.",
     "avoid": "Individuals with asthma or respiratory issues.",
-    "diseases_to_avoid": ["Asthma", "Respiratory Issues"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Respiratory Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2911,7 +3174,9 @@
     "name": "Calcium Silicate (E552)",
     "cause": "Anti-caking agent that may contain asbestos contamination.",
     "avoid": "All consumers due to potential contamination risk.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2935,7 +3200,9 @@
     "name": "Magnesium Silicate (E553a)",
     "cause": "Anti-caking agent, potential asbestos contamination.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -2959,7 +3226,10 @@
     "name": "Sodium Ferrocyanide (E535)",
     "cause": "Anti-caking agent that can release cyanide in acidic conditions.",
     "avoid": "All consumers, especially with kidney issues.",
-    "diseases_to_avoid": ["Kidney Disease", "Toxicity Risk"],
+    "diseases_to_avoid": [
+      "Kidney Disease",
+      "Toxicity Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -2983,7 +3253,9 @@
     "name": "Potassium Ferrocyanide (E536)",
     "cause": "Anti-caking agent with cyanide risk.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Toxicity Risk"],
+    "diseases_to_avoid": [
+      "Toxicity Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -3007,7 +3279,9 @@
     "name": "Calcium Peroxide (E930)",
     "cause": "Flour bleaching agent, oxidizer that can be harmful.",
     "avoid": "All consumers seeking unbleached flour.",
-    "diseases_to_avoid": ["Digestive Issues"],
+    "diseases_to_avoid": [
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3031,7 +3305,10 @@
     "name": "Azodicarbonamide (E927a)",
     "cause": "Flour bleaching agent that decomposes to carcinogenic compounds.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Asthma", "Cancer Risk"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -3055,7 +3332,10 @@
     "name": "Potassium Bromate",
     "cause": "Known carcinogen, banned in many countries but still used in some Indian products.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk", "Kidney Damage"],
+    "diseases_to_avoid": [
+      "Cancer Risk",
+      "Kidney Damage"
+    ],
     "risk_level": "severe",
     "macros": {
       "calories_per_100g": 0,
@@ -3079,7 +3359,9 @@
     "name": "Calcium Bromate",
     "cause": "Flour improver, potential carcinogen.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "severe",
     "macros": {
       "calories_per_100g": 0,
@@ -3103,7 +3385,9 @@
     "name": "Chlorine Dioxide",
     "cause": "Flour bleaching agent that destroys nutrients.",
     "avoid": "All consumers seeking whole nutrients.",
-    "diseases_to_avoid": ["Nutrient Deficiency"],
+    "diseases_to_avoid": [
+      "Nutrient Deficiency"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3127,7 +3411,9 @@
     "name": "Benzoyl Peroxide",
     "cause": "Flour bleaching agent that destroys vitamins.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Nutrient Deficiency"],
+    "diseases_to_avoid": [
+      "Nutrient Deficiency"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3151,7 +3437,10 @@
     "name": "Propylene Glycol (E1520)",
     "cause": "Humectant and solvent, can cause allergic reactions.",
     "avoid": "Individuals with skin sensitivities.",
-    "diseases_to_avoid": ["Allergies", "Skin Sensitivity"],
+    "diseases_to_avoid": [
+      "Allergies",
+      "Skin Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3175,7 +3464,9 @@
     "name": "Glycerol (E422)",
     "cause": "Humectant that may cause headaches and digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 430,
@@ -3199,7 +3490,10 @@
     "name": "Sorbitol (E420)",
     "cause": "Sugar alcohol that can cause digestive distress and laxative effect.",
     "avoid": "Individuals with IBS or sensitive digestion.",
-    "diseases_to_avoid": ["IBS", "Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "IBS",
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 260,
@@ -3223,7 +3517,9 @@
     "name": "Mannitol (E421)",
     "cause": "Sugar alcohol with strong laxative effect.",
     "avoid": "Individuals with digestive issues.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 250,
@@ -3247,7 +3543,9 @@
     "name": "Isomalt (E953)",
     "cause": "Sugar alcohol that can cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 240,
@@ -3271,7 +3569,9 @@
     "name": "Lactitol (E966)",
     "cause": "Sugar alcohol that can cause digestive distress.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 210,
@@ -3295,7 +3595,9 @@
     "name": "Xylitol (E967)",
     "cause": "Toxic to dogs, can cause digestive issues in humans.",
     "avoid": "Households with pets, sensitive individuals.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 240,
@@ -3319,7 +3621,9 @@
     "name": "Erythritol (E968)",
     "cause": "May cause digestive issues in sensitive individuals.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 20,
@@ -3343,7 +3647,9 @@
     "name": "Polydextrose (E1200)",
     "cause": "Synthetic fiber that can cause bloating and gas.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 10,
@@ -3367,7 +3673,10 @@
     "name": "Inulin",
     "cause": "Prebiotic fiber that can cause severe bloating in sensitive individuals.",
     "avoid": "Individuals with FODMAP sensitivity.",
-    "diseases_to_avoid": ["IBS", "FODMAP Sensitivity"],
+    "diseases_to_avoid": [
+      "IBS",
+      "FODMAP Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 150,
@@ -3391,7 +3700,10 @@
     "name": "Olestra (Olean)",
     "cause": "Fat substitute that can cause digestive issues and reduce vitamin absorption.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Digestive Issues", "Vitamin Deficiency"],
+    "diseases_to_avoid": [
+      "Digestive Issues",
+      "Vitamin Deficiency"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -3415,7 +3727,9 @@
     "name": "Hydrogenated Starch Hydrolysate",
     "cause": "Sugar alcohol blend that can cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 300,
@@ -3439,7 +3753,10 @@
     "name": "Partially Hydrogenated Oil",
     "cause": "Primary source of artificial trans fats.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cardiovascular Disease", "High Cholesterol"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease",
+      "High Cholesterol"
+    ],
     "risk_level": "severe",
     "macros": {
       "calories_per_100g": 884,
@@ -3463,7 +3780,10 @@
     "name": "Interesterified Fat",
     "cause": "Modified fat that may raise blood sugar and lower HDL.",
     "avoid": "Individuals with diabetes or heart conditions.",
-    "diseases_to_avoid": ["Diabetes", "Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Cardiovascular Disease"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 884,
@@ -3487,7 +3807,9 @@
     "name": "Acetylated Monoglycerides",
     "cause": "Emulsifier that may affect digestion.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 754,
@@ -3535,7 +3857,10 @@
     "name": "Polysorbate 20",
     "cause": "Emulsifier linked to gut inflammation.",
     "avoid": "Individuals with IBD.",
-    "diseases_to_avoid": ["IBD", "Digestive Issues"],
+    "diseases_to_avoid": [
+      "IBD",
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 763,
@@ -3559,7 +3884,9 @@
     "name": "Polysorbate 40",
     "cause": "Emulsifier that may disrupt gut microbiome.",
     "avoid": "Individuals with digestive issues.",
-    "diseases_to_avoid": ["Digestive Issues"],
+    "diseases_to_avoid": [
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 763,
@@ -3583,7 +3910,9 @@
     "name": "Polysorbate 65",
     "cause": "Emulsifier linked to metabolic issues.",
     "avoid": "Individuals with metabolic syndrome.",
-    "diseases_to_avoid": ["Metabolic Syndrome"],
+    "diseases_to_avoid": [
+      "Metabolic Syndrome"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 763,
@@ -3607,7 +3936,9 @@
     "name": "Sodium Stearoyl Lactylate (E481)",
     "cause": "Emulsifier that may cause allergic reactions.",
     "avoid": "Individuals with allergies.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 500,
@@ -3631,7 +3962,9 @@
     "name": "Calcium Stearoyl Lactylate (E482)",
     "cause": "Emulsifier that may affect calcium absorption.",
     "avoid": "Individuals with calcium metabolism issues.",
-    "diseases_to_avoid": ["Calcium Metabolism Issues"],
+    "diseases_to_avoid": [
+      "Calcium Metabolism Issues"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 500,
@@ -3655,7 +3988,9 @@
     "name": "DATEM (E472e)",
     "cause": "Emulsifier linked to heart muscle damage in animal studies.",
     "avoid": "Individuals with heart conditions.",
-    "diseases_to_avoid": ["Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 600,
@@ -3679,7 +4014,9 @@
     "name": "Sodium Caseinate",
     "cause": "Milk protein derivative, common allergen.",
     "avoid": "Individuals with milk allergy.",
-    "diseases_to_avoid": ["Milk Allergy"],
+    "diseases_to_avoid": [
+      "Milk Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 375,
@@ -3703,7 +4040,9 @@
     "name": "Calcium Caseinate",
     "cause": "Milk protein, common allergen.",
     "avoid": "Individuals with milk allergy.",
-    "diseases_to_avoid": ["Milk Allergy"],
+    "diseases_to_avoid": [
+      "Milk Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 370,
@@ -3727,7 +4066,9 @@
     "name": "Whey Protein Concentrate",
     "cause": "May cause digestive issues in lactose intolerant.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 352,
@@ -3751,7 +4092,9 @@
     "name": "Textured Vegetable Protein (TVP)",
     "cause": "Highly processed soy product, may contain hexane.",
     "avoid": "Individuals with soy allergy.",
-    "diseases_to_avoid": ["Soy Allergy"],
+    "diseases_to_avoid": [
+      "Soy Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 340,
@@ -3771,12 +4114,13 @@
       "vitamin_c_per_100g": 0
     }
   },
-
   "autolyzed yeast extract": {
     "name": "Autolyzed Yeast Extract",
     "cause": "Contains natural MSG, may cause reactions in sensitive individuals.",
     "avoid": "Individuals sensitive to MSG.",
-    "diseases_to_avoid": ["MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 280,
@@ -3796,12 +4140,13 @@
       "vitamin_c_per_100g": 0
     }
   },
-  
   "smoke flavor": {
     "name": "Smoke Flavor",
     "cause": "May contain polycyclic aromatic hydrocarbons (PAHs) which are carcinogenic.",
     "avoid": "All consumers, especially cancer-risk individuals.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3825,7 +4170,9 @@
     "name": "Caramel Color IV",
     "cause": "Made with ammonia, contains 4-MEI which is a potential carcinogen.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 250,
@@ -3849,7 +4196,9 @@
     "name": "Annatto Color",
     "cause": "Natural color that can cause allergic reactions in sensitive individuals.",
     "avoid": "Individuals with annatto allergy.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 300,
@@ -3869,12 +4218,14 @@
       "vitamin_c_per_100g": 0
     }
   },
-
   "disodium guanylate": {
     "name": "Disodium Guanylate (E627)",
     "cause": "Flavor enhancer often used with MSG, may cause gout and hyperactivity.",
     "avoid": "Patients with gout, children with ADHD.",
-    "diseases_to_avoid": ["Gout", "ADHD"],
+    "diseases_to_avoid": [
+      "Gout",
+      "ADHD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3898,7 +4249,10 @@
     "name": "Disodium Inosinate (E631)",
     "cause": "Flavor enhancer that works synergistically with MSG, may trigger gout.",
     "avoid": "Individuals with gout or kidney issues.",
-    "diseases_to_avoid": ["Gout", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Gout",
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -3922,7 +4276,10 @@
     "name": "Hydrolyzed Corn Gluten",
     "cause": "Flavor enhancer containing natural MSG, common allergen.",
     "avoid": "Individuals with corn allergy or MSG sensitivity.",
-    "diseases_to_avoid": ["Corn Allergy", "MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "Corn Allergy",
+      "MSG Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -3946,7 +4303,10 @@
     "name": "Textured Soy Protein (TSP)",
     "cause": "Highly processed soy product, may contain hexane residues.",
     "avoid": "Individuals with soy allergy or thyroid issues.",
-    "diseases_to_avoid": ["Soy Allergy", "Thyroid Dysfunction"],
+    "diseases_to_avoid": [
+      "Soy Allergy",
+      "Thyroid Dysfunction"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 340,
@@ -3970,7 +4330,10 @@
     "name": "Soy Protein Concentrate",
     "cause": "May affect thyroid function and hormone balance.",
     "avoid": "Individuals with thyroid issues or hormone-sensitive conditions.",
-    "diseases_to_avoid": ["Thyroid Dysfunction", "Hormonal Imbalance"],
+    "diseases_to_avoid": [
+      "Thyroid Dysfunction",
+      "Hormonal Imbalance"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 328,
@@ -3994,7 +4357,10 @@
     "name": "Wheat Gluten",
     "cause": "Concentrated gluten protein, problematic for celiac patients.",
     "avoid": "Individuals with celiac disease or gluten sensitivity.",
-    "diseases_to_avoid": ["Celiac Disease", "Gluten Intolerance"],
+    "diseases_to_avoid": [
+      "Celiac Disease",
+      "Gluten Intolerance"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 370,
@@ -4018,7 +4384,10 @@
     "name": "Vital Wheat Gluten",
     "cause": "Highly concentrated gluten, very problematic for gluten-sensitive individuals.",
     "avoid": "Celiac patients and gluten-sensitive individuals.",
-    "diseases_to_avoid": ["Celiac Disease", "Gluten Intolerance"],
+    "diseases_to_avoid": [
+      "Celiac Disease",
+      "Gluten Intolerance"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 375,
@@ -4042,7 +4411,10 @@
     "name": "Autolyzed Yeast Extract",
     "cause": "Natural source of MSG, may cause reactions in sensitive individuals.",
     "avoid": "Individuals sensitive to MSG.",
-    "diseases_to_avoid": ["MSG Sensitivity", "Migraines"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity",
+      "Migraines"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 280,
@@ -4066,7 +4438,9 @@
     "name": "Torula Yeast",
     "cause": "Flavor enhancer with natural glutamates.",
     "avoid": "MSG-sensitive individuals.",
-    "diseases_to_avoid": ["MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 290,
@@ -4090,7 +4464,10 @@
     "name": "Yeast Extract",
     "cause": "Contains natural MSG, may cause headaches and allergic reactions.",
     "avoid": "Individuals sensitive to MSG.",
-    "diseases_to_avoid": ["MSG Sensitivity", "Migraines"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity",
+      "Migraines"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 270,
@@ -4114,7 +4491,10 @@
     "name": "Hydrolyzed Wheat Protein",
     "cause": "Contains gluten and natural MSG.",
     "avoid": "Celiac patients and MSG-sensitive individuals.",
-    "diseases_to_avoid": ["Celiac Disease", "MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "Celiac Disease",
+      "MSG Sensitivity"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 360,
@@ -4138,7 +4518,10 @@
     "name": "Hydrolyzed Corn Protein",
     "cause": "Contains natural MSG, common allergen.",
     "avoid": "Corn allergy or MSG-sensitive individuals.",
-    "diseases_to_avoid": ["Corn Allergy", "MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "Corn Allergy",
+      "MSG Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 380,
@@ -4162,7 +4545,11 @@
     "name": "Soy Sauce Powder",
     "cause": "Very high in sodium, contains wheat and soy.",
     "avoid": "Individuals with hypertension, wheat or soy allergy.",
-    "diseases_to_avoid": ["Hypertension", "Wheat Allergy", "Soy Allergy"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Wheat Allergy",
+      "Soy Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 250,
@@ -4186,7 +4573,10 @@
     "name": "Miso Powder",
     "cause": "High sodium content, contains soy and grains.",
     "avoid": "Individuals with hypertension or soy allergy.",
-    "diseases_to_avoid": ["Hypertension", "Soy Allergy"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Soy Allergy"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 280,
@@ -4210,7 +4600,10 @@
     "name": "Beef Flavor (Artificial)",
     "cause": "Contains multiple artificial chemicals and MSG.",
     "avoid": "Individuals seeking natural foods or sensitive to additives.",
-    "diseases_to_avoid": ["MSG Sensitivity", "Allergies"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 150,
@@ -4234,7 +4627,10 @@
     "name": "Chicken Flavor (Artificial)",
     "cause": "Contains hydrolyzed proteins and artificial flavors.",
     "avoid": "Individuals sensitive to MSG or artificial additives.",
-    "diseases_to_avoid": ["MSG Sensitivity", "Allergies"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 140,
@@ -4258,7 +4654,9 @@
     "name": "Vegetable Protein Hydrolysate",
     "cause": "Contains natural MSG from various vegetable sources.",
     "avoid": "MSG-sensitive individuals.",
-    "diseases_to_avoid": ["MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 320,
@@ -4282,7 +4680,10 @@
     "name": "Disodium Ribonucleotides",
     "cause": "Flavor enhancer combination (I+G), may cause gout.",
     "avoid": "Individuals with gout or kidney issues.",
-    "diseases_to_avoid": ["Gout", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Gout",
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -4306,7 +4707,10 @@
     "name": "Calcium Chloride (E509)",
     "cause": "Firming agent that can irritate digestive system.",
     "avoid": "Individuals with sensitive digestion or kidney issues.",
-    "diseases_to_avoid": ["Digestive Sensitivity", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity",
+      "Kidney Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -4330,7 +4734,9 @@
     "name": "Calcium Lactate (E327)",
     "cause": "Calcium supplement that may cause digestive issues.",
     "avoid": "Lactose intolerant individuals.",
-    "diseases_to_avoid": ["Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Lactose Intolerance"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -4354,7 +4760,9 @@
     "name": "Sodium Alginate (E401)",
     "cause": "Thickener from seaweed, may cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 250,
@@ -4378,7 +4786,9 @@
     "name": "Potassium Alginate (E402)",
     "cause": "Thickener that may affect potassium levels.",
     "avoid": "Individuals with kidney disease.",
-    "diseases_to_avoid": ["Kidney Disease"],
+    "diseases_to_avoid": [
+      "Kidney Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 250,
@@ -4402,7 +4812,9 @@
     "name": "Agar Agar (E406)",
     "cause": "Vegetarian gelatin substitute, may cause bloating.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 300,
@@ -4426,7 +4838,9 @@
     "name": "Gellan Gum (E418)",
     "cause": "Synthetic gum that may cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 300,
@@ -4450,7 +4864,9 @@
     "name": "Tara Gum (E417)",
     "cause": "Thickener that may cause digestive discomfort.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 320,
@@ -4474,7 +4890,11 @@
     "name": "Instant Noodle Seasoning Mix",
     "cause": "Typically contains very high sodium, MSG, and multiple additives.",
     "avoid": "Individuals with hypertension, kidney issues, or additive sensitivity.",
-    "diseases_to_avoid": ["Hypertension", "Kidney Disease", "MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Kidney Disease",
+      "MSG Sensitivity"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 280,
@@ -4498,7 +4918,10 @@
     "name": "Instant Noodle Cake",
     "cause": "Typically deep-fried, high in saturated fat and sodium.",
     "avoid": "Individuals with heart conditions or hypertension.",
-    "diseases_to_avoid": ["Cardiovascular Disease", "Hypertension"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease",
+      "Hypertension"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 450,
@@ -4522,7 +4945,9 @@
     "name": "Fried Onion Flakes",
     "cause": "Deep-fried, high in fat and acrylamide.",
     "avoid": "Individuals seeking low-fat options.",
-    "diseases_to_avoid": ["Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "Cardiovascular Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 520,
@@ -4546,7 +4971,10 @@
     "name": "Dehydrated Vegetable Mix",
     "cause": "Often contain sulfites as preservatives.",
     "avoid": "Individuals with asthma or sulfite sensitivity.",
-    "diseases_to_avoid": ["Asthma", "Sulfite Sensitivity"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Sulfite Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 350,
@@ -4570,7 +4998,9 @@
     "name": "Freeze-Dried Meat",
     "cause": "Often high in sodium and preservatives.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 480,
@@ -4618,7 +5048,10 @@
     "name": "Instant Soup Base",
     "cause": "Very high in sodium and artificial flavors.",
     "avoid": "Individuals with hypertension or kidney issues.",
-    "diseases_to_avoid": ["Hypertension", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Kidney Disease"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 200,
@@ -4642,7 +5075,10 @@
     "name": "Instant Gravy Powder",
     "cause": "High in sodium, artificial colors and flavors.",
     "avoid": "Individuals with hypertension or additive sensitivity.",
-    "diseases_to_avoid": ["Hypertension", "Allergies"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -4666,7 +5102,11 @@
     "name": "Bouillon Powder",
     "cause": "Extremely high in sodium and MSG.",
     "avoid": "Individuals with hypertension, kidney issues, or MSG sensitivity.",
-    "diseases_to_avoid": ["Hypertension", "Kidney Disease", "MSG Sensitivity"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Kidney Disease",
+      "MSG Sensitivity"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 180,
@@ -4690,7 +5130,10 @@
     "name": "Stock Cubes",
     "cause": "Very high sodium content with multiple additives.",
     "avoid": "Individuals with hypertension or additive sensitivity.",
-    "diseases_to_avoid": ["Hypertension", "Allergies"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Allergies"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 220,
@@ -4714,7 +5157,10 @@
     "name": "Flavor Enhancer (E621, E627, E631)",
     "cause": "Combination of MSG and nucleotides, very potent flavor enhancer.",
     "avoid": "Individuals sensitive to MSG or with gout.",
-    "diseases_to_avoid": ["MSG Sensitivity", "Gout"],
+    "diseases_to_avoid": [
+      "MSG Sensitivity",
+      "Gout"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -4762,7 +5208,10 @@
     "name": "Dehydrated Cheese Powder",
     "cause": "High in sodium and artificial colors.",
     "avoid": "Individuals with hypertension or lactose intolerance.",
-    "diseases_to_avoid": ["Hypertension", "Lactose Intolerance"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Lactose Intolerance"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 580,
@@ -4786,7 +5235,10 @@
     "name": "Cream Soup Powder",
     "cause": "High in sodium, saturated fat, and additives.",
     "avoid": "Individuals with hypertension or heart conditions.",
-    "diseases_to_avoid": ["Hypertension", "Cardiovascular Disease"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Cardiovascular Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 450,
@@ -4810,7 +5262,9 @@
     "name": "Tomato Soup Powder",
     "cause": "High in sodium and often contains artificial colors.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 380,
@@ -4834,7 +5288,10 @@
     "name": "Vegetable Soup Mix",
     "cause": "High sodium content with multiple preservatives.",
     "avoid": "Individuals with hypertension or kidney issues.",
-    "diseases_to_avoid": ["Hypertension", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -4854,7 +5311,6 @@
       "vitamin_c_per_100g": 30
     }
   },
-
   "e100": {
     "name": "Curcumin (E100)",
     "cause": "Natural yellow color from turmeric, generally safe.",
@@ -4883,7 +5339,10 @@
     "name": "Tartrazine (Yellow 5 / E102)",
     "cause": "Linked to hyperactivity and asthma symptoms.",
     "avoid": "Asthma sufferers, children.",
-    "diseases_to_avoid": ["Asthma", "ADHD"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "ADHD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -4907,7 +5366,10 @@
     "name": "Sunset Yellow FCF (E110)",
     "cause": "Synthetic azo dye; linked to hyperactivity and stomach upsets.",
     "avoid": "Children, individuals with asthma.",
-    "diseases_to_avoid": ["ADHD", "Asthma"],
+    "diseases_to_avoid": [
+      "ADHD",
+      "Asthma"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -4931,7 +5393,9 @@
     "name": "Carmine/Cochineal (E120)",
     "cause": "Red color from insects, can cause severe allergic reactions.",
     "avoid": "Vegetarians, vegans, individuals with allergies.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -4955,7 +5419,10 @@
     "name": "Carmoisine (E122)",
     "cause": "Synthetic azo dye; linked to hyperactivity and possible allergic reactions.",
     "avoid": "Children.",
-    "diseases_to_avoid": ["ADHD", "Allergies"],
+    "diseases_to_avoid": [
+      "ADHD",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -4979,7 +5446,11 @@
     "name": "Ponceau 4R (E124)",
     "cause": "Synthetic azo dye; linked to hyperactivity, banned in several countries.",
     "avoid": "Children, individuals with asthma or aspirin sensitivity.",
-    "diseases_to_avoid": ["ADHD", "Asthma", "Allergies"],
+    "diseases_to_avoid": [
+      "ADHD",
+      "Asthma",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5003,7 +5474,10 @@
     "name": "Allura Red AC (Red 40 / E129)",
     "cause": "Linked to hyperactivity and allergic reactions in children.",
     "avoid": "Children, individuals prone to hives/allergies.",
-    "diseases_to_avoid": ["ADHD", "Allergies"],
+    "diseases_to_avoid": [
+      "ADHD",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5027,7 +5501,9 @@
     "name": "Patent Blue V (E131)",
     "cause": "Synthetic blue dye; linked to allergic reactions.",
     "avoid": "Individuals with allergies.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5051,7 +5527,10 @@
     "name": "Indigotine (Indigo Carmine / E132)",
     "cause": "Synthetic color; can cause nausea, high blood pressure, and skin reactions.",
     "avoid": "Individuals with high blood pressure or known sensitivities.",
-    "diseases_to_avoid": ["Hypertension", "Allergies"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Allergies"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5075,7 +5554,10 @@
     "name": "Brilliant Blue FCF (E133)",
     "cause": "Linked to allergic reactions and hyperactivity.",
     "avoid": "Children.",
-    "diseases_to_avoid": ["Allergies", "ADHD"],
+    "diseases_to_avoid": [
+      "Allergies",
+      "ADHD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5099,7 +5581,9 @@
     "name": "Green S (E142)",
     "cause": "Synthetic green dye; linked to hyperactivity.",
     "avoid": "Children.",
-    "diseases_to_avoid": ["ADHD"],
+    "diseases_to_avoid": [
+      "ADHD"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5119,35 +5603,13 @@
       "vitamin_c_per_100g": 0
     }
   },
-  "e150a": {
-    "name": "Plain Caramel (E150a)",
-    "cause": "Generally safe coloring agent.",
-    "avoid": "None generally.",
-    "diseases_to_avoid": [],
-    "risk_level": "low",
-    "macros": {
-      "calories_per_100g": 250,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 62,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 0,
-      "saturated_fat_per_100g": 0,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 500,
-      "potassium_per_100g": 50,
-      "calcium_per_100g": 10,
-      "iron_per_100g": 5,
-      "vitamin_c_per_100g": 0
-    }
-  },
   "e150c": {
     "name": "Ammonia Caramel (E150c)",
     "cause": "May contain 4-MEI, a potential carcinogen.",
     "avoid": "All consumers due to cancer risk.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 250,
@@ -5171,7 +5633,10 @@
     "name": "Sulfite Ammonia Caramel (E150d)",
     "cause": "May contain 4-MEI and sulfites.",
     "avoid": "Asthma sufferers, cancer-risk individuals.",
-    "diseases_to_avoid": ["Asthma", "Cancer Risk"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Cancer Risk"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 250,
@@ -5219,7 +5684,9 @@
     "name": "Sorbic Acid (E200)",
     "cause": "Preservative; low toxicity but can cause mild irritation or allergic reactions.",
     "avoid": "Individuals with chemical sensitivities.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5243,7 +5710,10 @@
     "name": "Potassium Sorbate (E202)",
     "cause": "Preservative; generally safe but can cause skin irritation and mild allergic reactions.",
     "avoid": "Individuals with skin sensitivity.",
-    "diseases_to_avoid": ["Skin Sensitivity", "Allergies"],
+    "diseases_to_avoid": [
+      "Skin Sensitivity",
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5267,7 +5737,10 @@
     "name": "Sodium Benzoate (E211)",
     "cause": "Can convert to carcinogen benzene when combined with Vitamin C; linked to hyperactivity in children.",
     "avoid": "Children with ADHD, individuals sensitive to preservatives.",
-    "diseases_to_avoid": ["ADHD", "Cancer Risk"],
+    "diseases_to_avoid": [
+      "ADHD",
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -5291,7 +5764,10 @@
     "name": "Sulphur Dioxide (E220)",
     "cause": "Sulfiting agent; severe asthma trigger and linked to allergic reactions.",
     "avoid": "Asthma sufferers, individuals with sulfite sensitivity.",
-    "diseases_to_avoid": ["Asthma", "Allergies"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Allergies"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -5315,7 +5791,10 @@
     "name": "Sodium Nitrite (E250)",
     "cause": "Used in processed meats; forms carcinogenic nitrosamines when heated.",
     "avoid": "Individuals with hypertension (high sodium), cancer risk.",
-    "diseases_to_avoid": ["Hypertension", "Cancer Risk"],
+    "diseases_to_avoid": [
+      "Hypertension",
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -5339,7 +5818,9 @@
     "name": "Sodium Nitrate (E251)",
     "cause": "Preservative that can convert to nitrosamines, potential carcinogen.",
     "avoid": "All consumers, especially cancer-risk individuals.",
-    "diseases_to_avoid": ["Cancer Risk"],
+    "diseases_to_avoid": [
+      "Cancer Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -5363,7 +5844,11 @@
     "name": "Calcium Propionate (E282)",
     "cause": "Common bread preservative; linked to insulin resistance and behavioral changes.",
     "avoid": "Patients with diabetes, children.",
-    "diseases_to_avoid": ["Diabetes", "Insulin Resistance", "Behavioral Issues"],
+    "diseases_to_avoid": [
+      "Diabetes",
+      "Insulin Resistance",
+      "Behavioral Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5387,7 +5872,9 @@
     "name": "Malic Acid (E296)",
     "cause": "Acidic, may cause digestive issues.",
     "avoid": "Individuals with GERD.",
-    "diseases_to_avoid": ["GERD"],
+    "diseases_to_avoid": [
+      "GERD"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5411,7 +5898,10 @@
     "name": "Fumaric Acid (E297)",
     "cause": "Acidulant; generally safe but may cause mouth and stomach irritation.",
     "avoid": "Individuals with severe acid reflux or ulcers.",
-    "diseases_to_avoid": ["Ulcers", "Acid Reflux"],
+    "diseases_to_avoid": [
+      "Ulcers",
+      "Acid Reflux"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5429,30 +5919,6 @@
       "calcium_per_100g": 0,
       "iron_per_100g": 0,
       "vitamin_c_per_100g": 0
-    }
-  },
-  "e300": {
-    "name": "Ascorbic Acid (E300)",
-    "cause": "Generally safe, but high dose can cause diarrhea.",
-    "avoid": "Avoid high doses.",
-    "diseases_to_avoid": ["N/A"],
-    "risk_level": "low",
-    "macros": {
-      "calories_per_100g": 0,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 0,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 0,
-      "saturated_fat_per_100g": 0,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 5,
-      "potassium_per_100g": 0,
-      "calcium_per_100g": 0,
-      "iron_per_100g": 0,
-      "vitamin_c_per_100g": 100000
     }
   },
   "e307": {
@@ -5483,7 +5949,10 @@
     "name": "BHA (Butylated Hydroxyanisole / E320)",
     "cause": "Suspected endocrine disruptor and carcinogen in high doses.",
     "avoid": "All consumers, especially those with hormonal sensitivities.",
-    "diseases_to_avoid": ["Cancer Risk", "Endocrine Disruption"],
+    "diseases_to_avoid": [
+      "Cancer Risk",
+      "Endocrine Disruption"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 900,
@@ -5507,7 +5976,10 @@
     "name": "BHT (Butylated Hydroxytoluene / E321)",
     "cause": "Antioxidant; linked to cancer and neurological issues in animal studies.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Cancer Risk", "Neurological Issues"],
+    "diseases_to_avoid": [
+      "Cancer Risk",
+      "Neurological Issues"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 900,
@@ -5527,35 +5999,14 @@
       "vitamin_c_per_100g": 0
     }
   },
-  "e322": {
-    "name": "Lecithin (E322)",
-    "cause": "Emulsifier, often soy or egg derived.",
-    "avoid": "Individuals with Soy/Egg Allergy.",
-    "diseases_to_avoid": ["Soy Allergy", "Egg Allergy"],
-    "risk_level": "low",
-    "macros": {
-      "calories_per_100g": 763,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 8.6,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 100,
-      "saturated_fat_per_100g": 15,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 20,
-      "potassium_per_100g": 0,
-      "calcium_per_100g": 0,
-      "iron_per_100g": 0,
-      "vitamin_c_per_100g": 0
-    }
-  },
   "e330": {
     "name": "Citric Acid (E330) - Synthetic",
     "cause": "Highly acidic; can erode tooth enamel and trigger acid reflux/GERD.",
     "avoid": "Individuals with severe GERD or compromised tooth enamel.",
-    "diseases_to_avoid": ["GERD", "Acid Reflux"],
+    "diseases_to_avoid": [
+      "GERD",
+      "Acid Reflux"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5579,7 +6030,9 @@
     "name": "Sodium Citrate (E331)",
     "cause": "Acidity regulator, high sodium content.",
     "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5603,7 +6056,9 @@
     "name": "Tartaric Acid (E334)",
     "cause": "Acidulant; can have a laxative effect in large doses.",
     "avoid": "Individuals with digestive sensitivity.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -5627,7 +6082,10 @@
     "name": "Phosphoric Acid (E338)",
     "cause": "Acidic, can leach calcium from bones and damage tooth enamel.",
     "avoid": "Individuals with osteoporosis or dental issues.",
-    "diseases_to_avoid": ["Osteoporosis", "Dental Issues"],
+    "diseases_to_avoid": [
+      "Osteoporosis",
+      "Dental Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5651,7 +6109,10 @@
     "name": "Sodium Phosphate (E339)",
     "cause": "High sodium and phosphate content; can affect kidney function.",
     "avoid": "Individuals with kidney disease or hypertension.",
-    "diseases_to_avoid": ["Kidney Disease", "Hypertension"],
+    "diseases_to_avoid": [
+      "Kidney Disease",
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5675,7 +6136,9 @@
     "name": "Potassium Phosphate (E340)",
     "cause": "High potassium content; problematic for kidney patients.",
     "avoid": "Individuals with kidney disease.",
-    "diseases_to_avoid": ["Kidney Disease"],
+    "diseases_to_avoid": [
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5723,7 +6186,11 @@
     "name": "Carrageenan (E407)",
     "cause": "Linked to chronic intestinal inflammation and digestive distress.",
     "avoid": "Individuals with Inflammatory Bowel Disease (IBD), Crohn's, or Ulcerative Colitis.",
-    "diseases_to_avoid": ["IBD", "Crohn's Disease", "Ulcerative Colitis"],
+    "diseases_to_avoid": [
+      "IBD",
+      "Crohn's Disease",
+      "Ulcerative Colitis"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 350,
@@ -5747,7 +6214,9 @@
     "name": "Guar Gum (E412)",
     "cause": "May cause severe bloating/gas in large amounts.",
     "avoid": "Individuals with severe bloating.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 320,
@@ -5771,7 +6240,9 @@
     "name": "Xanthan Gum (E415)",
     "cause": "Laxative effect in large amounts.",
     "avoid": "Individuals with sensitive digestive systems.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 300,
@@ -5795,7 +6266,10 @@
     "name": "Karaya Gum (E416)",
     "cause": "May cause allergic reactions and digestive issues.",
     "avoid": "Individuals with allergies or sensitive digestion.",
-    "diseases_to_avoid": ["Allergies", "Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Allergies",
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 310,
@@ -5819,7 +6293,10 @@
     "name": "Sorbitol (E420)",
     "cause": "Sugar alcohol that can cause digestive distress and laxative effect.",
     "avoid": "Individuals with IBS or sensitive digestion.",
-    "diseases_to_avoid": ["IBS", "Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "IBS",
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 260,
@@ -5843,7 +6320,9 @@
     "name": "Mannitol (E421)",
     "cause": "Sugar alcohol with strong laxative effect.",
     "avoid": "Individuals with digestive issues.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 250,
@@ -5863,35 +6342,15 @@
       "vitamin_c_per_100g": 0
     }
   },
-  "e422": {
-    "name": "Glycerol (E422)",
-    "cause": "Humectant that may cause headaches and digestive issues.",
-    "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
-    "risk_level": "low",
-    "macros": {
-      "calories_per_100g": 430,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 0,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 0,
-      "saturated_fat_per_100g": 0,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 0,
-      "potassium_per_100g": 0,
-      "calcium_per_100g": 0,
-      "iron_per_100g": 0,
-      "vitamin_c_per_100g": 0
-    }
-  },
   "e433": {
     "name": "Polysorbate 80 (E433)",
     "cause": "Emulsifier; linked to gut inflammation, dysbiosis, and metabolic syndrome in animal studies.",
     "avoid": "Individuals with IBD or chronic digestive issues.",
-    "diseases_to_avoid": ["IBD", "Digestive Issues", "Metabolic Syndrome"],
+    "diseases_to_avoid": [
+      "IBD",
+      "Digestive Issues",
+      "Metabolic Syndrome"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 763,
@@ -5915,7 +6374,10 @@
     "name": "Polysorbate 60 (E435)",
     "cause": "Emulsifier; linked to gut inflammation and dysbiosis.",
     "avoid": "Individuals with IBD or chronic digestive issues.",
-    "diseases_to_avoid": ["IBD", "Digestive Issues"],
+    "diseases_to_avoid": [
+      "IBD",
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 763,
@@ -5939,7 +6401,9 @@
     "name": "Pectin (E440)",
     "cause": "May cause digestive issues in large amounts.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 325,
@@ -5963,7 +6427,10 @@
     "name": "Diphosphates (E450)",
     "cause": "High phosphate content; can affect kidney and heart health.",
     "avoid": "Patients with kidney disease or hypertension.",
-    "diseases_to_avoid": ["Kidney Disease", "Hypertension"],
+    "diseases_to_avoid": [
+      "Kidney Disease",
+      "Hypertension"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -5983,35 +6450,13 @@
       "vitamin_c_per_100g": 0
     }
   },
-  "e466": {
-    "name": "Carboxymethyl cellulose (E466/Cellulose Gum)",
-    "cause": "Emulsifier linked to gut inflammation and dysbiosis in animal studies.",
-    "avoid": "Individuals with IBD or chronic digestive issues.",
-    "diseases_to_avoid": ["IBD", "Digestive Issues"],
-    "risk_level": "medium",
-    "macros": {
-      "calories_per_100g": 0,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 0,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 0,
-      "saturated_fat_per_100g": 0,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 8000,
-      "potassium_per_100g": 0,
-      "calcium_per_100g": 0,
-      "iron_per_100g": 0,
-      "vitamin_c_per_100g": 0
-    }
-  },
   "e471": {
     "name": "Mono- and Diglycerides (E471)",
     "cause": "Emulsifier derived from fat.",
     "avoid": "N/A",
-    "diseases_to_avoid": ["N/A"],
+    "diseases_to_avoid": [
+      "N/A"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 754,
@@ -6035,7 +6480,9 @@
     "name": "Polyglycerol Esters of Fatty Acids (E475)",
     "cause": "Emulsifier that may cause digestive issues.",
     "avoid": "Individuals with sensitive digestion.",
-    "diseases_to_avoid": ["Digestive Sensitivity"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 700,
@@ -6059,7 +6506,9 @@
     "name": "Sodium Stearoyl Lactylate (E481)",
     "cause": "Emulsifier that may cause allergic reactions.",
     "avoid": "Individuals with allergies.",
-    "diseases_to_avoid": ["Allergies"],
+    "diseases_to_avoid": [
+      "Allergies"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 500,
@@ -6079,35 +6528,14 @@
       "vitamin_c_per_100g": 0
     }
   },
-  "e500": {
-    "name": "Sodium Carbonate (E500)",
-    "cause": "Acidity regulator, high sodium content.",
-    "avoid": "Individuals with hypertension.",
-    "diseases_to_avoid": ["Hypertension"],
-    "risk_level": "low",
-    "macros": {
-      "calories_per_100g": 0,
-      "protein_per_100g": 0,
-      "carbohydrates_per_100g": 0,
-      "sugars_per_100g": 0,
-      "added_sugars_per_100g": 0,
-      "fiber_per_100g": 0,
-      "fat_per_100g": 0,
-      "saturated_fat_per_100g": 0,
-      "trans_fat_per_100g": 0,
-      "cholesterol_per_100g": 0,
-      "sodium_per_100g": 27000,
-      "potassium_per_100g": 0,
-      "calcium_per_100g": 0,
-      "iron_per_100g": 0,
-      "vitamin_c_per_100g": 0
-    }
-  },
   "e503": {
     "name": "Ammonium Carbonate (E503)",
     "cause": "Leavening agent that releases ammonia gas.",
     "avoid": "Individuals with respiratory issues.",
-    "diseases_to_avoid": ["Asthma", "Respiratory Issues"],
+    "diseases_to_avoid": [
+      "Asthma",
+      "Respiratory Issues"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -6131,7 +6559,9 @@
     "name": "Potassium Chloride (E508)",
     "cause": "Can be problematic for kidney function in large amounts.",
     "avoid": "Individuals with Kidney Disease.",
-    "diseases_to_avoid": ["Kidney Disease"],
+    "diseases_to_avoid": [
+      "Kidney Disease"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -6155,7 +6585,10 @@
     "name": "Calcium Chloride (E509)",
     "cause": "Firming agent that can irritate digestive system.",
     "avoid": "Individuals with sensitive digestion or kidney issues.",
-    "diseases_to_avoid": ["Digestive Sensitivity", "Kidney Disease"],
+    "diseases_to_avoid": [
+      "Digestive Sensitivity",
+      "Kidney Disease"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -6179,7 +6612,9 @@
     "name": "Calcium Sulphate (E516)",
     "cause": "Excessive intake can contribute to kidney stones.",
     "avoid": "Individuals prone to kidney stones.",
-    "diseases_to_avoid": ["Kidney Stones"],
+    "diseases_to_avoid": [
+      "Kidney Stones"
+    ],
     "risk_level": "low",
     "macros": {
       "calories_per_100g": 0,
@@ -6203,7 +6638,9 @@
     "name": "Sodium Hydroxide (E524)",
     "cause": "Strong alkali used in food processing.",
     "avoid": "All consumers due to caustic nature.",
-    "diseases_to_avoid": ["Digestive Issues"],
+    "diseases_to_avoid": [
+      "Digestive Issues"
+    ],
     "risk_level": "medium",
     "macros": {
       "calories_per_100g": 0,
@@ -6227,7 +6664,10 @@
     "name": "Sodium Ferrocyanide (E535)",
     "cause": "Anti-caking agent that can release cyanide in acidic conditions.",
     "avoid": "All consumers, especially with kidney issues.",
-    "diseases_to_avoid": ["Kidney Disease", "Toxicity Risk"],
+    "diseases_to_avoid": [
+      "Kidney Disease",
+      "Toxicity Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -6251,7 +6691,9 @@
     "name": "Potassium Ferrocyanide (E536)",
     "cause": "Anti-caking agent with cyanide risk.",
     "avoid": "All consumers.",
-    "diseases_to_avoid": ["Toxicity Risk"],
+    "diseases_to_avoid": [
+      "Toxicity Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -6275,7 +6717,10 @@
     "name": "Sodium Aluminium Phosphate (E541)",
     "cause": "Leavening agent containing aluminum, linked to neurological issues.",
     "avoid": "All consumers, especially children.",
-    "diseases_to_avoid": ["Neurological Issues", "Alzheimer's Risk"],
+    "diseases_to_avoid": [
+      "Neurological Issues",
+      "Alzheimer's Risk"
+    ],
     "risk_level": "high",
     "macros": {
       "calories_per_100g": 0,
@@ -6318,6 +6763,1554 @@
       "iron_per_100g": 0,
       "vitamin_c_per_100g": 0
     }
+  },
+  "e950": {
+    "name": "Acesulfame Potassium (Ace-K) (E950)",
+    "cause": "Artificial sweetener, ~200 times sweeter than sugar.",
+    "avoid": "Individuals looking to avoid artificial sweeteners.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e951": {
+    "name": "Aspartame (E951)",
+    "cause": "Artificial sweetener. Contains phenylalanine.",
+    "avoid": "People with Phenylketonuria (PKU). Some report headaches.",
+    "diseases_to_avoid": [
+      "Phenylketonuria (PKU)"
+    ],
+    "risk_level": "medium",
+    "macros": {
+      "calories_per_100g": 400,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e965": {
+    "name": "Maltitol (E965)",
+    "cause": "Sugar alcohol used as a sweetener and humectant. Has a lower glycemic index than sugar.",
+    "avoid": "Can cause digestive upset, gas, and laxative effects in large amounts.",
+    "diseases_to_avoid": [
+      "Irritable Bowel Syndrome (IBS) in sensitive individuals"
+    ],
+    "risk_level": "medium",
+    "macros": {
+      "calories_per_100g": 270,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e967": {
+    "name": "Xylitol (E967)",
+    "cause": "Sugar alcohol. Sweetener that is good for dental health.",
+    "avoid": "Highly toxic to dogs. Can cause digestive upset in humans in large amounts.",
+    "diseases_to_avoid": [
+      "Irritable Bowel Syndrome (IBS) in sensitive individuals"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 240,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e1200": {
+    "name": "Polydextrose (E1200)",
+    "cause": "Synthetic polymer of glucose. Used as a bulking agent and soluble fiber.",
+    "avoid": "Can cause gas, bloating, and laxative effects in large amounts.",
+    "diseases_to_avoid": [
+      "Irritable Bowel Syndrome (IBS) in sensitive individuals"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 250,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 90,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e150a": {
+    "name": "Caramel Colour (Plain) (E150a)",
+    "cause": "Food colouring made from heated sugars.",
+    "avoid": "Generally safe. Some types (E150c, E150d) made with ammonia can contain contaminants; these are less common in foods.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 250,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 62.5,
+      "sugars_per_100g": 62.5,
+      "added_sugars_per_100g": 62.5,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 2700,
+      "potassium_per_100g": 100,
+      "calcium_per_100g": 30,
+      "iron_per_100g": 5,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "whey_protein_concentrate": {
+    "name": "Whey Protein Concentrate",
+    "cause": "Complete protein derived from milk. High in Branched-Chain Amino Acids (BCAAs).",
+    "avoid": "Individuals with lactose intolerance (mild) or milk allergy.",
+    "diseases_to_avoid": [
+      "Milk Allergy",
+      "Severe Lactose Intolerance"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 380,
+      "protein_per_100g": 75,
+      "carbohydrates_per_100g": 8,
+      "sugars_per_100g": 4,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 5,
+      "saturated_fat_per_100g": 3,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 65,
+      "sodium_per_100g": 250,
+      "potassium_per_100g": 500,
+      "calcium_per_100g": 400,
+      "iron_per_100g": 0.5,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "soy_protein_isolate": {
+    "name": "Soy Protein Isolate",
+    "cause": "Plant-based protein derived from soybeans. Contains all essential amino acids.",
+    "avoid": "Individuals with soy allergy.",
+    "diseases_to_avoid": [
+      "Soy Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 350,
+      "protein_per_100g": 88,
+      "carbohydrates_per_100g": 2,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 2,
+      "fat_per_100g": 1,
+      "saturated_fat_per_100g": 0.2,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 800,
+      "potassium_per_100g": 100,
+      "calcium_per_100g": 150,
+      "iron_per_100g": 6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "palm_kernel_oil": {
+    "name": "Palm Kernel Oil",
+    "cause": "A highly saturated fat from the palm fruit kernel. Used for texture and shelf-stability.",
+    "avoid": "Individuals looking to avoid high saturated fats or for environmental reasons (deforestation).",
+    "diseases_to_avoid": [
+      "Cardiovascular Disease (in excessive consumption)"
+    ],
+    "risk_level": "medium",
+    "macros": {
+      "calories_per_100g": 860,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 100,
+      "saturated_fat_per_100g": 82,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e170": {
+    "name": "Calcium Carbonate (E170)",
+    "cause": "Mineral source (calcium) and anti-caking agent.",
+    "avoid": "Generally safe. High doses can cause constipation.",
+    "diseases_to_avoid": [
+      "Hypercalcemia"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 40000,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e300": {
+    "name": "Ascorbic Acid (Vitamin C) (E300)",
+    "cause": "Antioxidant and nutrient.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 99999
+    }
+  },
+  "e306": {
+    "name": "Tocopherols (Vitamin E) (E306)",
+    "cause": "Natural antioxidant from vegetable oils.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 880,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 100,
+      "saturated_fat_per_100g": 15,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e322": {
+    "name": "Soy Lecithin (E322)",
+    "cause": "Emulsifier from soy.",
+    "avoid": "Soy allergy.",
+    "diseases_to_avoid": [
+      "Soy Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 763,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 8.6,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 100,
+      "saturated_fat_per_100g": 15.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 150,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 15.2,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e414": {
+    "name": "Acacia Gum (E414)",
+    "cause": "Thickener and fiber.",
+    "avoid": "High doses may cause bloating.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 100,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 25,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 25,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e422": {
+    "name": "Glycerol/Glycerin (E422)",
+    "cause": "Humectant to retain moisture.",
+    "avoid": "Can cause headaches in sensitive individuals.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 430,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e464": {
+    "name": "Hydroxypropyl Methylcellulose (E464)",
+    "cause": "Vegetarian gelling agent and thickener.",
+    "avoid": "Generally safe.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 90,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e466": {
+    "name": "Carboxymethylcellulose (CMC) (E466)",
+    "cause": "Thickener and stabilizer.",
+    "avoid": "High doses can cause bloating.",
+    "diseases_to_avoid": [
+      "Inflammatory Bowel Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 90,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 8000,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e500": {
+    "name": "Sodium Bicarbonate (E500)",
+    "cause": "Leavening agent.",
+    "avoid": "High sodium content.",
+    "diseases_to_avoid": [
+      "Hypertension"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 27360,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e901": {
+    "name": "Beeswax (E901)",
+    "cause": "Glazing agent.",
+    "avoid": "Vegans, those with bee allergy.",
+    "diseases_to_avoid": [
+      "Bee Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 900,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 100,
+      "saturated_fat_per_100g": 80,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e953": {
+    "name": "Isomalt (E953)",
+    "cause": "Sugar alcohol, low glycemic.",
+    "avoid": "Laxative effect in large amounts.",
+    "diseases_to_avoid": [
+      "IBS"
+    ],
+    "risk_level": "medium",
+    "macros": {
+      "calories_per_100g": 200,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e1400": {
+    "name": "Dextrin (E1400)",
+    "cause": "Starch derivative, thickener.",
+    "avoid": "High glycemic index.",
+    "diseases_to_avoid": [
+      "Diabetes"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 400,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 100,
+      "sugars_per_100g": 5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "rolled_oats": {
+    "name": "Rolled Oats",
+    "cause": "Whole grain, source of beta-glucan fiber.",
+    "avoid": "Gluten intolerance (if not certified gluten-free).",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 379,
+      "protein_per_100g": 13,
+      "carbohydrates_per_100g": 68,
+      "sugars_per_100g": 1.1,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 10,
+      "fat_per_100g": 6.5,
+      "saturated_fat_per_100g": 1.1,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 6,
+      "potassium_per_100g": 362,
+      "calcium_per_100g": 52,
+      "iron_per_100g": 4.3,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "jowar_flour": {
+    "name": "Jowar (Sorghum) Flour",
+    "cause": "Gluten-free whole grain flour.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 355,
+      "protein_per_100g": 11,
+      "carbohydrates_per_100g": 73,
+      "sugars_per_100g": 2.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 6.7,
+      "fat_per_100g": 3.3,
+      "saturated_fat_per_100g": 0.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 2,
+      "potassium_per_100g": 350,
+      "calcium_per_100g": 25,
+      "iron_per_100g": 4.4,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "ragi_flour": {
+    "name": "Ragi (Finger Millet) Flour",
+    "cause": "Gluten-free grain, high in calcium.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 336,
+      "protein_per_100g": 7.3,
+      "carbohydrates_per_100g": 72,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 11.5,
+      "fat_per_100g": 1.3,
+      "saturated_fat_per_100g": 0.2,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 11,
+      "potassium_per_100g": 408,
+      "calcium_per_100g": 344,
+      "iron_per_100g": 3.9,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "bajra_flour": {
+    "name": "Bajra (Pearl Millet) Flour",
+    "cause": "Gluten-free whole grain.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 361,
+      "protein_per_100g": 11,
+      "carbohydrates_per_100g": 67,
+      "sugars_per_100g": 1.7,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 11,
+      "fat_per_100g": 5.4,
+      "saturated_fat_per_100g": 0.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 5,
+      "potassium_per_100g": 195,
+      "calcium_per_100g": 42,
+      "iron_per_100g": 8,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "quinoa_puffs": {
+    "name": "Quinoa Puffs",
+    "cause": "Gluten-free puffed grain, complete protein.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 360,
+      "protein_per_100g": 14,
+      "carbohydrates_per_100g": 68,
+      "sugars_per_100g": 4.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 7,
+      "fat_per_100g": 5,
+      "saturated_fat_per_100g": 0.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 10,
+      "potassium_per_100g": 563,
+      "calcium_per_100g": 47,
+      "iron_per_100g": 4.6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "brown_rice_crisps": {
+    "name": "Brown Rice Crisps",
+    "cause": "Whole grain crisp rice.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 370,
+      "protein_per_100g": 8,
+      "carbohydrates_per_100g": 78,
+      "sugars_per_100g": 1,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 3.5,
+      "fat_per_100g": 2.8,
+      "saturated_fat_per_100g": 0.6,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 5,
+      "potassium_per_100g": 150,
+      "calcium_per_100g": 20,
+      "iron_per_100g": 1.5,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "whole_wheat_flakes": {
+    "name": "Whole Wheat Flakes",
+    "cause": "Whole grain source of fiber.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 340,
+      "protein_per_100g": 12,
+      "carbohydrates_per_100g": 72,
+      "sugars_per_100g": 1,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 12,
+      "fat_per_100g": 2,
+      "saturated_fat_per_100g": 0.4,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 5,
+      "potassium_per_100g": 400,
+      "calcium_per_100g": 35,
+      "iron_per_100g": 4.2,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "amaranth_seeds": {
+    "name": "Amaranth Seeds",
+    "cause": "Gluten-free pseudo-grain, high protein.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 371,
+      "protein_per_100g": 14,
+      "carbohydrates_per_100g": 65,
+      "sugars_per_100g": 1.7,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 7,
+      "fat_per_100g": 7,
+      "saturated_fat_per_100g": 1.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 4,
+      "potassium_per_100g": 508,
+      "calcium_per_100g": 159,
+      "iron_per_100g": 7.6,
+      "vitamin_c_per_100g": 4.2
+    }
+  },
+  "chia_seeds": {
+    "name": "Chia Seeds",
+    "cause": "High fiber, omega-3, and protein.",
+    "avoid": "Can cause digestive issues if consumed dry without liquid.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 486,
+      "protein_per_100g": 17,
+      "carbohydrates_per_100g": 42,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 34,
+      "fat_per_100g": 31,
+      "saturated_fat_per_100g": 3.3,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 16,
+      "potassium_per_100g": 407,
+      "calcium_per_100g": 631,
+      "iron_per_100g": 7.7,
+      "vitamin_c_per_100g": 1.6
+    }
+  },
+  "flax_seeds": {
+    "name": "Flax Seeds",
+    "cause": "High fiber and omega-3.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 534,
+      "protein_per_100g": 18,
+      "carbohydrates_per_100g": 29,
+      "sugars_per_100g": 1.6,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 27,
+      "fat_per_100g": 42,
+      "saturated_fat_per_100g": 3.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 30,
+      "potassium_per_100g": 813,
+      "calcium_per_100g": 255,
+      "iron_per_100g": 5.7,
+      "vitamin_c_per_100g": 0.6
+    }
+  },
+  "sunflower_seeds": {
+    "name": "Sunflower Seeds",
+    "cause": "Source of healthy fats and vitamin E.",
+    "avoid": "Seed allergy.",
+    "diseases_to_avoid": [
+      "Seed Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 584,
+      "protein_per_100g": 21,
+      "carbohydrates_per_100g": 20,
+      "sugars_per_100g": 2.6,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 9,
+      "fat_per_100g": 51,
+      "saturated_fat_per_100g": 4.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 9,
+      "potassium_per_100g": 645,
+      "calcium_per_100g": 78,
+      "iron_per_100g": 5.3,
+      "vitamin_c_per_100g": 1.4
+    }
+  },
+  "pumpkin_seeds": {
+    "name": "Pumpkin Seeds",
+    "cause": "High in magnesium and zinc.",
+    "avoid": "Seed allergy.",
+    "diseases_to_avoid": [
+      "Seed Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 559,
+      "protein_per_100g": 30,
+      "carbohydrates_per_100g": 11,
+      "sugars_per_100g": 1.4,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 6,
+      "fat_per_100g": 49,
+      "saturated_fat_per_100g": 8.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 7,
+      "potassium_per_100g": 809,
+      "calcium_per_100g": 46,
+      "iron_per_100g": 8.8,
+      "vitamin_c_per_100g": 1.9
+    }
+  },
+  "sesame_seeds": {
+    "name": "Sesame Seeds",
+    "cause": "Good source of calcium and healthy fats.",
+    "avoid": "Sesame allergy.",
+    "diseases_to_avoid": [
+      "Sesame Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 573,
+      "protein_per_100g": 18,
+      "carbohydrates_per_100g": 23,
+      "sugars_per_100g": 0.3,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 12,
+      "fat_per_100g": 50,
+      "saturated_fat_per_100g": 7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 11,
+      "potassium_per_100g": 468,
+      "calcium_per_100g": 975,
+      "iron_per_100g": 14.6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "watermelon_seeds": {
+    "name": "Watermelon Seeds",
+    "cause": "Source of protein and minerals.",
+    "avoid": "Seed allergy.",
+    "diseases_to_avoid": [
+      "Seed Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 557,
+      "protein_per_100g": 28,
+      "carbohydrates_per_100g": 15,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 5,
+      "fat_per_100g": 47,
+      "saturated_fat_per_100g": 9.8,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 99,
+      "potassium_per_100g": 648,
+      "calcium_per_100g": 54,
+      "iron_per_100g": 7.3,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "muskmelon_seeds": {
+    "name": "Muskmelon Seeds",
+    "cause": "Traditional snack, source of protein.",
+    "avoid": "Seed allergy.",
+    "diseases_to_avoid": [
+      "Seed Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 555,
+      "protein_per_100g": 30,
+      "carbohydrates_per_100g": 10,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 4,
+      "fat_per_100g": 48,
+      "saturated_fat_per_100g": 8.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 80,
+      "potassium_per_100g": 700,
+      "calcium_per_100g": 50,
+      "iron_per_100g": 8,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "sabja_seeds": {
+    "name": "Sabja (Basil) Seeds",
+    "cause": "High fiber, form gel when soaked.",
+    "avoid": "Can expand and cause blockage if consumed dry.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 442,
+      "protein_per_100g": 20,
+      "carbohydrates_per_100g": 64,
+      "sugars_per_100g": 1.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 22,
+      "fat_per_100g": 17,
+      "saturated_fat_per_100g": 3.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 25,
+      "potassium_per_100g": 950,
+      "calcium_per_100g": 1770,
+      "iron_per_100g": 19,
+      "vitamin_c_per_100g": 12
+    }
+  },
+  "psyllium_husk": {
+    "name": "Psyllium Husk (Isabgol)",
+    "cause": "Soluble fiber, binder and thickener.",
+    "avoid": "Can cause choking if not taken with enough water.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 200,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 80,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 80,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 30,
+      "potassium_per_100g": 360,
+      "calcium_per_100g": 110,
+      "iron_per_100g": 12,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e101": {
+    "name": "Riboflavin (Vitamin B2) (E101)",
+    "cause": "Vitamin and yellow food colouring.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "e163": {
+    "name": "Anthocyanins (E163)",
+    "cause": "Natural color (red/blue) from fruits/vegetables.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "buckwheat_groats": {
+    "name": "Buckwheat Groats",
+    "cause": "Gluten-free seed, high in rutin and fiber.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 343,
+      "protein_per_100g": 13,
+      "carbohydrates_per_100g": 72,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 10,
+      "fat_per_100g": 3.4,
+      "saturated_fat_per_100g": 0.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 1,
+      "potassium_per_100g": 460,
+      "calcium_per_100g": 18,
+      "iron_per_100g": 2.2,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "teff_grain": {
+    "name": "Teff Grain",
+    "cause": "Tiny gluten-free grain, high in iron and calcium.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 367,
+      "protein_per_100g": 13,
+      "carbohydrates_per_100g": 73,
+      "sugars_per_100g": 1.8,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 8,
+      "fat_per_100g": 2.4,
+      "saturated_fat_per_100g": 0.4,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 12,
+      "potassium_per_100g": 427,
+      "calcium_per_100g": 180,
+      "iron_per_100g": 7.6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "kodo_millet": {
+    "name": "Kodo Millet",
+    "cause": "Gluten-free ancient grain, high fiber.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 353,
+      "protein_per_100g": 9.8,
+      "carbohydrates_per_100g": 66,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 9,
+      "fat_per_100g": 3.6,
+      "saturated_fat_per_100g": 0.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 5,
+      "potassium_per_100g": 195,
+      "calcium_per_100g": 35,
+      "iron_per_100g": 3.6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "little_millet": {
+    "name": "Little Millet",
+    "cause": "Small gluten-free grain, rich in B vitamins.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 341,
+      "protein_per_100g": 10.1,
+      "carbohydrates_per_100g": 67,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 8.5,
+      "fat_per_100g": 4.7,
+      "saturated_fat_per_100g": 0.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 8,
+      "potassium_per_100g": 220,
+      "calcium_per_100g": 30,
+      "iron_per_100g": 3.2,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "barnyard_millet": {
+    "name": "Barnyard Millet",
+    "cause": "Fast-cooking gluten-free grain, high in fiber.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 307,
+      "protein_per_100g": 11.2,
+      "carbohydrates_per_100g": 61,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 13.6,
+      "fat_per_100g": 4.4,
+      "saturated_fat_per_100g": 0.8,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 10,
+      "potassium_per_100g": 250,
+      "calcium_per_100g": 20,
+      "iron_per_100g": 5,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "spelt_flakes": {
+    "name": "Spelt Flakes",
+    "cause": "Ancient wheat variety, nutty flavor.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 338,
+      "protein_per_100g": 15,
+      "carbohydrates_per_100g": 70,
+      "sugars_per_100g": 2.6,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 11,
+      "fat_per_100g": 2.4,
+      "saturated_fat_per_100g": 0.4,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 8,
+      "potassium_per_100g": 388,
+      "calcium_per_100g": 27,
+      "iron_per_100g": 4.4,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "kamut_khorasan": {
+    "name": "Kamut Khorasan Wheat",
+    "cause": "Ancient wheat, higher protein than modern wheat.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 337,
+      "protein_per_100g": 17,
+      "carbohydrates_per_100g": 70,
+      "sugars_per_100g": 7.3,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 11,
+      "fat_per_100g": 2.1,
+      "saturated_fat_per_100g": 0.3,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 5,
+      "potassium_per_100g": 446,
+      "calcium_per_100g": 30,
+      "iron_per_100g": 3.8,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "freekeh": {
+    "name": "Freekeh",
+    "cause": "Young green wheat, roasted, high in protein.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 351,
+      "protein_per_100g": 16,
+      "carbohydrates_per_100g": 71,
+      "sugars_per_100g": 6.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 16,
+      "fat_per_100g": 2.5,
+      "saturated_fat_per_100g": 0.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 10,
+      "potassium_per_100g": 431,
+      "calcium_per_100g": 40,
+      "iron_per_100g": 3.7,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "hemp_hearts": {
+    "name": "Hemp Hearts",
+    "cause": "Shelled hemp seeds, complete protein, omega-3.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 553,
+      "protein_per_100g": 31,
+      "carbohydrates_per_100g": 9,
+      "sugars_per_100g": 1.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 4,
+      "fat_per_100g": 49,
+      "saturated_fat_per_100g": 4.6,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 7,
+      "potassium_per_100g": 1200,
+      "calcium_per_100g": 70,
+      "iron_per_100g": 7.9,
+      "vitamin_c_per_100g": 1
+    }
+  },
+  "pine_nuts": {
+    "name": "Pine Nuts",
+    "cause": "Soft nuts, rich in pinolenic acid.",
+    "avoid": "Pine nut allergy.",
+    "diseases_to_avoid": [
+      "Pine Nut Allergy"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 673,
+      "protein_per_100g": 14,
+      "carbohydrates_per_100g": 13,
+      "sugars_per_100g": 3.6,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 3.7,
+      "fat_per_100g": 68,
+      "saturated_fat_per_100g": 4.9,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 2,
+      "potassium_per_100g": 597,
+      "calcium_per_100g": 16,
+      "iron_per_100g": 5.5,
+      "vitamin_c_per_100g": 0.8
+    }
+  },
+  "pomegranate_seeds": {
+    "name": "Pomegranate Seeds",
+    "cause": "Crunchy seeds with juicy coating, antioxidant.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 83,
+      "protein_per_100g": 1.7,
+      "carbohydrates_per_100g": 19,
+      "sugars_per_100g": 14,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 4,
+      "fat_per_100g": 1.2,
+      "saturated_fat_per_100g": 0.1,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 3,
+      "potassium_per_100g": 236,
+      "calcium_per_100g": 10,
+      "iron_per_100g": 0.3,
+      "vitamin_c_per_100g": 10.2
+    }
+  },
+  "lotus_seeds": {
+    "name": "Lotus Seeds (Makhana)",
+    "cause": "Puffed seeds, low calorie, high in minerals.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 350,
+      "protein_per_100g": 14.5,
+      "carbohydrates_per_100g": 70,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 3,
+      "fat_per_100g": 1.9,
+      "saturated_fat_per_100g": 0.3,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 250,
+      "potassium_per_100g": 950,
+      "calcium_per_100g": 60,
+      "iron_per_100g": 1.4,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "water_chestnut": {
+    "name": "Water Chestnut Flour",
+    "cause": "Gluten-free flour from aquatic vegetable.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 340,
+      "protein_per_100g": 5.9,
+      "carbohydrates_per_100g": 80,
+      "sugars_per_100g": 4.5,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 3.5,
+      "fat_per_100g": 0.2,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 20,
+      "potassium_per_100g": 550,
+      "calcium_per_100g": 11,
+      "iron_per_100g": 1.2,
+      "vitamin_c_per_100g": 6
+    }
+  },
+  "tiger_nuts": {
+    "name": "Tiger Nuts",
+    "cause": "Small tubers, high fiber, prebiotic.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 400,
+      "protein_per_100g": 5.2,
+      "carbohydrates_per_100g": 62,
+      "sugars_per_100g": 24,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 33,
+      "fat_per_100g": 25,
+      "saturated_fat_per_100g": 4.9,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 25,
+      "potassium_per_100g": 580,
+      "calcium_per_100g": 150,
+      "iron_per_100g": 4.4,
+      "vitamin_c_per_100g": 6
+    }
+  },
+  "jackfruit_seeds": {
+    "name": "Jackfruit Seeds (Roasted)",
+    "cause": "Edible when cooked, nutty flavor.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 184,
+      "protein_per_100g": 7,
+      "carbohydrates_per_100g": 38,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 1.5,
+      "fat_per_100g": 1,
+      "saturated_fat_per_100g": 0.2,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 3,
+      "potassium_per_100g": 400,
+      "calcium_per_100g": 50,
+      "iron_per_100g": 1.5,
+      "vitamin_c_per_100g": 11
+    }
+  },
+  "guar_gum": {
+    "name": "Guar Gum",
+    "cause": "Natural thickener from guar beans.",
+    "avoid": "Can cause digestive issues in large amounts.",
+    "diseases_to_avoid": [
+      "IBS"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 5,
+      "carbohydrates_per_100g": 85,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 80,
+      "fat_per_100g": 0.5,
+      "saturated_fat_per_100g": 0.1,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 50,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 290,
+      "iron_per_100g": 1.5,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "xanthan_gum": {
+    "name": "Xanthan Gum",
+    "cause": "Fermented sugar thickener, gluten-free.",
+    "avoid": "Can cause digestive issues in large amounts.",
+    "diseases_to_avoid": [
+      "IBS"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 300,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 75,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 75,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 8000,
+      "potassium_per_100g": 2100,
+      "calcium_per_100g": 6670,
+      "iron_per_100g": 2.1,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "carnauba_wax": {
+    "name": "Carnauba Wax (E903)",
+    "cause": "Plant-based coating agent.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 0,
+      "protein_per_100g": 0,
+      "carbohydrates_per_100g": 0,
+      "sugars_per_100g": 0,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 0,
+      "fat_per_100g": 0,
+      "saturated_fat_per_100g": 0,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 0,
+      "potassium_per_100g": 0,
+      "calcium_per_100g": 0,
+      "iron_per_100g": 0,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "spirulina": {
+    "name": "Spirulina",
+    "cause": "Blue-green algae, high protein and nutrients.",
+    "avoid": "Phenylketonuria (contains phenylalanine).",
+    "diseases_to_avoid": [
+      "Phenylketonuria"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 290,
+      "protein_per_100g": 57,
+      "carbohydrates_per_100g": 24,
+      "sugars_per_100g": 3.1,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 3.6,
+      "fat_per_100g": 7.7,
+      "saturated_fat_per_100g": 2.7,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 1048,
+      "potassium_per_100g": 1363,
+      "calcium_per_100g": 120,
+      "iron_per_100g": 28.5,
+      "vitamin_c_per_100g": 10.1
+    }
+  },
+  "moringa_powder": {
+    "name": "Moringa Powder",
+    "cause": "Leaf powder, high in vitamins and minerals.",
+    "avoid": "None generally.",
+    "diseases_to_avoid": [],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 320,
+      "protein_per_100g": 27,
+      "carbohydrates_per_100g": 39,
+      "sugars_per_100g": 8.3,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 19,
+      "fat_per_100g": 2.3,
+      "saturated_fat_per_100g": 0.4,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 337,
+      "potassium_per_100g": 1324,
+      "calcium_per_100g": 2003,
+      "iron_per_100g": 28.2,
+      "vitamin_c_per_100g": 17.3
+    }
+  },
+  "barley_flakes": {
+    "name": "Barley Flakes",
+    "cause": "Whole grain, high in beta-glucan fiber.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 354,
+      "protein_per_100g": 12,
+      "carbohydrates_per_100g": 73,
+      "sugars_per_100g": 0.8,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 17,
+      "fat_per_100g": 2.3,
+      "saturated_fat_per_100g": 0.5,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 9,
+      "potassium_per_100g": 452,
+      "calcium_per_100g": 33,
+      "iron_per_100g": 3.6,
+      "vitamin_c_per_100g": 0
+    }
+  },
+  "rye_flakes": {
+    "name": "Rye Flakes",
+    "cause": "Whole grain, dense flavor, high fiber.",
+    "avoid": "Gluten intolerance.",
+    "diseases_to_avoid": [
+      "Celiac Disease"
+    ],
+    "risk_level": "low",
+    "macros": {
+      "calories_per_100g": 350,
+      "protein_per_100g": 14,
+      "carbohydrates_per_100g": 69,
+      "sugars_per_100g": 1.2,
+      "added_sugars_per_100g": 0,
+      "fiber_per_100g": 15,
+      "fat_per_100g": 2.5,
+      "saturated_fat_per_100g": 0.3,
+      "trans_fat_per_100g": 0,
+      "cholesterol_per_100g": 0,
+      "sodium_per_100g": 2,
+      "potassium_per_100g": 510,
+      "calcium_per_100g": 40,
+      "iron_per_100g": 4.1,
+      "vitamin_c_per_100g": 0
+    }
   }
 }
-
